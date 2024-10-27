@@ -54,7 +54,6 @@ namespace OleksiiStepanov.Game
 
         #endregion
 
-
         #region IAP
 
         public const string IAP_NO_ADS = "com.oleksiistepanov.mahjonghorizons.no_ads";
