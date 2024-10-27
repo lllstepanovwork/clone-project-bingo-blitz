@@ -1,4 +1,5 @@
-﻿using OleksiiStepanov.Game;
+﻿using OleksiiStepanov.App;
+using OleksiiStepanov.Game;
 
 namespace OleksiiStepanov.Loading
 {
@@ -6,6 +7,7 @@ namespace OleksiiStepanov.Loading
     {
         public override void Enter()
         {
+            AppLoader.Instance.LoaderCanvas.SetActive(false);
             Exit();
         }
 

@@ -1,5 +1,8 @@
 version: 2
 tpsheetFileNames:
+- Assets/OleksiiStepanov/Sprites/bb-ui-atlas.tpsheet
 textureFileNames:
+- Assets/OleksiiStepanov/Sprites/bb-ui-atlas.png
 normalmapFileNames:
+- 
 enableDebugOutput: 0
