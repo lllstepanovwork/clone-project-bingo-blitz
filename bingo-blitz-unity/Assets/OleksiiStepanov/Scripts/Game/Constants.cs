@@ -92,10 +92,8 @@ namespace OleksiiStepanov.Game
 
         #region Gameplay
 
-        public const int POINTS_PER_COMBINATION = 10;
-        public const int STAR_CONDITION_1 = 10;
-        public const int STAR_CONDITION_2 = 13;
-        public const int STAR_CONDITION_3 = 16;
+        public const float BINGO_SEQUENCE_FIRST_TIME = 1f;
+        public const float BINGO_SEQUENCE_REPEAT_TIME = 3f;
 
         #endregion
     }

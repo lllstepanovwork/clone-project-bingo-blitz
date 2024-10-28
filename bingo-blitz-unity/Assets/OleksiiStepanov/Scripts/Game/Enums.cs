@@ -1,5 +1,4 @@
-﻿
-namespace OleksiiStepanov.Game
+﻿namespace OleksiiStepanov.Game
 {
     #region AppLoader
 
@@ -19,7 +18,7 @@ namespace OleksiiStepanov.Game
 
     #endregion
 
-    #region UIBasePanelAnimationType
+    #region UI
 
     public enum UIBasePanelAnimationType
     {
@@ -29,61 +28,17 @@ namespace OleksiiStepanov.Game
     }
 
     #endregion
-
-    #region Shop
-
-    public enum ItemType
-    {
-        SoftCurrency,
-        Bomb,
-        Hint,
-        Shuffle
-    }
-
-    #endregion
-
-    #region Bank
-
-    public enum BankPurchaseType
-    {
-        NoAds,
-        Product1,
-        Product2,
-        Product3,
-        Product4
-    }
-
-    #endregion
-
-    #region Weather
-
-    public enum WeatherType
-    {
-        NoWeather,
-        LightRain,
-        HeavyRain,
-        LightSnow,
-        HeavySnow,
-        GoldenDust,
-        Fog
-    }
-
-    #endregion
-
-    #region LocalizationType
-
-    public enum LocalizationType
-    {
-        English = 0,
-        German = 1,
-        Spanish = 2,
-        French = 3,
-        Default = 99
-    }
-
-    #endregion
-
+    
     #region Gameplay
+
+
+    public enum BingoSequenceTransparencyType
+    {
+        Full,
+        Quarter,
+        Half,
+        Clear
+    }
 
     #endregion
 }
