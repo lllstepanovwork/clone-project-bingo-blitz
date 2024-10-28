@@ -194,6 +194,9 @@
                 <false/>
             </struct>
             <key type="filename">UI/BingoGameplay/bb-number-holder.png</key>
+            <key type="filename">UI/General/bb-bingo-field-icon.png</key>
+            <key type="filename">UI/General/bb-minus-button.png</key>
+            <key type="filename">UI/General/bb-plus-button.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -209,6 +212,7 @@
                 <false/>
             </struct>
             <key type="filename">UI/BingoGameplay/bb-panel-background.png</key>
+            <key type="filename">UI/General/bb-green-button.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -218,6 +222,21 @@
                 <true/>
                 <key>scale9Borders</key>
                 <rect>64,64,0,0</rect>
+                <key>scale9Paddings</key>
+                <rect>32,32,64,64</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">UI/General/bb-panel-header.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <true/>
+                <key>scale9Borders</key>
+                <rect>35,0,0,128</rect>
                 <key>scale9Paddings</key>
                 <rect>32,32,64,64</rect>
                 <key>scale9FromFile</key>

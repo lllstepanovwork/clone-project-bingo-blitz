@@ -27,11 +27,6 @@ namespace OleksiiStepanov.Gameplay
         private readonly BingoCombinations _combinations = new BingoCombinations(5);
         private readonly List<int> _currentBingoNumbers = new List<int>();
         
-        private void Start()
-        {
-            Init();
-        }
-
         public void Init()
         {
             _bingoCombinations = _combinations.GetBingoCombinations();    
