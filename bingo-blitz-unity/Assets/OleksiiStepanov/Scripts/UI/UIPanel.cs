@@ -11,9 +11,11 @@ namespace OleksiiStepanov.UI
 
     public abstract class UIPanel : MonoBehaviour
     {
-        [Header("UI View Content")]
+        [Header("UI Panel Content")]
         public CanvasGroup canvasGroup;
         public Transform contentTransform;
         public UIViewAnimationType animationType;
+
+        public abstract void OnUIPanelOpened();
     }
 }

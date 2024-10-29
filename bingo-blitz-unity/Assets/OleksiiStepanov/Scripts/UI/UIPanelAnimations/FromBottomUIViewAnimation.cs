@@ -23,7 +23,7 @@ namespace OleksiiStepanov.UI
             }
 
             uIPanel.contentTransform.position = new Vector3(0, startY, 0);
-            uIPanel.contentTransform.DOMoveY(endY, 1f).OnComplete(() =>
+            uIPanel.contentTransform.DOMoveY(endY, 0.5f).OnComplete(() =>
             {
                 onComplete?.Invoke();
             });

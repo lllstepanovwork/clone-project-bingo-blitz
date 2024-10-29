@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Data.Common;
 using UnityEngine;
+using DG.Tweening;
 using OleksiiStepanov.Utils;
 
 namespace OleksiiStepanov.Gameplay
@@ -9,6 +9,7 @@ namespace OleksiiStepanov.Gameplay
     public class BingoField : MonoBehaviour
     {
         [Header("Content")] 
+        [SerializeField] private Transform contentTransform;
         [SerializeField] private GameObject activeState;
         [SerializeField] private GameObject doneState;
         [SerializeField] private List<BingoFieldElement> elements = new List<BingoFieldElement>();
@@ -114,6 +115,11 @@ namespace OleksiiStepanov.Gameplay
             doneState.SetActive(true);
             
             OnBingoFieldCompleted?.Invoke();
+        }
+
+        public void PlayShakeAnimation()
+        {
+            contentTransform.DOShakeScale(.2f, .2f);
         }
     }
 }

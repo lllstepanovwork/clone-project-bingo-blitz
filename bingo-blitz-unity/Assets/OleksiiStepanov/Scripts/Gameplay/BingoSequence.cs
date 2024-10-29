@@ -29,6 +29,10 @@ namespace OleksiiStepanov.Gameplay
         public void Init()
         {
             bingoSequence = ListTools.GetRandomizedList(1,75);
+        }
+
+        public void StartBingoSequence()
+        {
             _countdownTimer.Start();
         }
 

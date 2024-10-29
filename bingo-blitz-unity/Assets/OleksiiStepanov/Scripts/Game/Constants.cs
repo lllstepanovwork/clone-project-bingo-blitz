@@ -92,7 +92,7 @@ namespace OleksiiStepanov.Game
 
         #region Gameplay
 
-        public const float BINGO_SEQUENCE_FIRST_TIME = 1f;
+        public const float BINGO_SEQUENCE_FIRST_TIME = 0f;
         public const float BINGO_SEQUENCE_REPEAT_TIME = 3f;
 
         #endregion

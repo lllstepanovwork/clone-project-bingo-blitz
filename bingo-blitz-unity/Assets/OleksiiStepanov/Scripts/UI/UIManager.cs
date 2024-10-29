@@ -17,6 +17,7 @@ namespace OleksiiStepanov.UI
         {
             _currentUIPanel = levelPanel;
             _uIPanelOpener.OpenPanel(levelPanel);
+            levelPanel.Init();
             
             onComplete?.Invoke();
         }
@@ -32,10 +33,14 @@ namespace OleksiiStepanov.UI
 
         public void OpenGameplayPanel(int layoutNumber)
         {
+            gameplayPanel.Init(layoutNumber);
+            
             _uIPanelOpener.ClosePanel(_currentUIPanel, () =>
             {
-                gameplayPanel.Init(1);
-                _uIPanelOpener.OpenPanel(gameplayPanel);
+                _uIPanelOpener.OpenPanel(gameplayPanel, () =>
+                {
+                    gameplayPanel.StartGame();
+                });
             });
         }
     }

@@ -6,6 +6,7 @@ namespace OleksiiStepanov.UI
 {
     public class GameplayPanelLayout : MonoBehaviour
     {
+        [Header("Content")]
         [SerializeField] private BingoSequence bingoSequence;
         [SerializeField] private List<BingoField> bingoFields;
 
@@ -21,6 +22,19 @@ namespace OleksiiStepanov.UI
             }
             
             bingoSequence.Init();
+        }
+        
+        public void StartGame() 
+        {
+            bingoSequence.StartBingoSequence();
+        }
+
+        public void PlayShakeAnimation()
+        {
+            foreach (var bingoField in bingoFields)
+            {
+                bingoField.PlayShakeAnimation();
+            }
         }
 
         private void OnEnable()
