@@ -1,6 +1,7 @@
-using UnityEngine;
+using System;
 using System.Collections.Generic;
 using OleksiiStepanov.Gameplay;
+using UnityEngine;
 
 namespace OleksiiStepanov.UI
 {
@@ -10,11 +11,13 @@ namespace OleksiiStepanov.UI
         [SerializeField] private BingoSequence bingoSequence;
         [SerializeField] private List<BingoField> bingoFields;
 
-        private int bingoFieldDoneCounter = 0;
+        private int _bingoFieldDoneCounter = 0;
+        
+        public static event Action OnGameOver; 
         
         public void Init()
         {
-            bingoFieldDoneCounter = 0;
+            _bingoFieldDoneCounter = 0;
             
             foreach (var bingoField in bingoFields)
             {
@@ -27,6 +30,11 @@ namespace OleksiiStepanov.UI
         public void StartGame() 
         {
             bingoSequence.StartBingoSequence();
+        }
+        
+        public void StopGame() 
+        {
+            bingoSequence.Stop();
         }
 
         public void PlayShakeAnimation()
@@ -49,13 +57,12 @@ namespace OleksiiStepanov.UI
         
         private void BingoFieldOnOnBingoFieldCompleted()
         {
-            bingoFieldDoneCounter++;
+            _bingoFieldDoneCounter++;
 
-            if (bingoFieldDoneCounter == bingoFields.Count)
-            {
-                bingoSequence.Stop();
-                Debug.Log("GAME OVER!");
-            }
+            if (_bingoFieldDoneCounter != bingoFields.Count) return;
+            
+            bingoSequence.Stop();
+            OnGameOver?.Invoke();
         }
     }
 }

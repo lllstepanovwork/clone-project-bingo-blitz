@@ -1,16 +1,14 @@
 using System;
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using DG.Tweening;
+using TMPro;
+using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 namespace OleksiiStepanov.Gameplay
 {
     public class BingoFieldElement : MonoBehaviour
     {
-        public static event Action<BingoFieldElement> OnButtonClick;
-
         [Header("Content")]
         [SerializeField] private GameObject activeState;
         [SerializeField] private GameObject doneState;
@@ -21,13 +19,21 @@ namespace OleksiiStepanov.Gameplay
         [SerializeField] private Image doneStateBackgroundImage;
         
         public bool Done { get; private set; }
-        
         public int Number { get; private set; }
+        
         private bool _initialized = false;
         
-        public void Init(int bingoNumber)
+        private BingoField _bingoField;
+        
+        public void Init(BingoField bingoField, int bingoNumber)
         {
+            _bingoField = bingoField;
+            
+            Done = false;
             Number = bingoNumber;
+            
+            activeState.SetActive(true);
+            doneState.SetActive(false);
         
             numberText.text = Number.ToString();
             
@@ -67,7 +73,7 @@ namespace OleksiiStepanov.Gameplay
                 return;
             }
 
-            OnButtonClick?.Invoke(this);
+            _bingoField.OnBingoFieldElementButtonClick(this);
         }
     }    
 }

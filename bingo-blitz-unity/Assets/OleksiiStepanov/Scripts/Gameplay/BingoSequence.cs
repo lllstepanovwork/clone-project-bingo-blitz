@@ -1,8 +1,8 @@
-using UnityEngine;
 using System;
 using System.Collections.Generic;
 using OleksiiStepanov.Game;
 using OleksiiStepanov.Utils;
+using UnityEngine;
 
 namespace OleksiiStepanov.Gameplay
 {
@@ -16,6 +16,7 @@ namespace OleksiiStepanov.Gameplay
 
         [SerializeField] private List<Sprite> bingoBallsSprites = new List<Sprite>();
         public static event Action<int> OnNewBingoNumberCreated;
+        
         private void OnEnable()
         {
             _countdownTimer.OnTimerEnd += OnTimerEnd;
@@ -29,6 +30,11 @@ namespace OleksiiStepanov.Gameplay
         public void Init()
         {
             bingoSequence = ListTools.GetRandomizedList(1,75);
+
+            for (int i = 0; i < bingoBalls.Count; i++)
+            {
+                bingoBalls[i].Init();
+            }
         }
 
         public void StartBingoSequence()
@@ -39,7 +45,6 @@ namespace OleksiiStepanov.Gameplay
         public void Stop()
         {
             _countdownTimer.Stop();
-            Debug.Log("BingoSequence Stop");
         }
 
         private void OnTimerEnd()
@@ -51,7 +56,7 @@ namespace OleksiiStepanov.Gameplay
 
             Sprite bingoBallSprite = GetBingoBallSprite(number);
             
-            bingoBalls[0].Init(number, bingoBallSprite);
+            bingoBalls[0].Show(number, bingoBallSprite);
             bingoBalls[0].transform.SetAsFirstSibling();
             
             _countdownTimer.Reset(Constants.BINGO_SEQUENCE_REPEAT_TIME);

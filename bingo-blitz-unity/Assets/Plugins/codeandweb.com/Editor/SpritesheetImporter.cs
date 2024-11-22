@@ -7,20 +7,18 @@
  *
  */
 
-using UnityEngine;
 using UnityEditor;
+using UnityEngine;
 
 #if UNITY_2023_1_OR_NEWER
-using System.Linq;
+using System.Collections.Generic;
 #endif
-
 // Note: TexturePacker Importer with Unity 2021.2 (or newer) requires the "Sprite 2D" package,
 //       please make sure that it is part of your Unity project. You can install it using
 //       Unity's package manager.
-
 #if UNITY_2021_2_OR_NEWER
+using System.Linq;
 using UnityEditor.U2D.Sprites;
-using System.Collections.Generic;
 #endif
 
 

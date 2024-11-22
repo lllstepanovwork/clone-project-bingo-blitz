@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 using DG.Tweening;
 using OleksiiStepanov.Utils;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace OleksiiStepanov.Gameplay
 {
@@ -21,6 +22,10 @@ namespace OleksiiStepanov.Gameplay
         [SerializeField] private List<BingoFieldElement> columnN = new List<BingoFieldElement>();
         [SerializeField] private List<BingoFieldElement> columnO = new List<BingoFieldElement>();
         
+        [Header("Done State Animation")]
+        [SerializeField] private Image doneStateBackground;
+        [SerializeField] private List<RectTransform> bingoLetters = new List<RectTransform>();
+        
         public static event Action OnBingoFieldCompleted;
         
         private List<int[]> _bingoCombinations = new List<int[]>();
@@ -30,8 +35,16 @@ namespace OleksiiStepanov.Gameplay
         
         public void Init()
         {
-            _bingoCombinations = _combinations.GetBingoCombinations();    
+            _bingoCombinations = _combinations.GetBingoCombinations();
             
+            activeState.SetActive(true);
+            doneState.SetActive(false);
+
+            for (int i = 0; i < bingoLetters.Count; i++)
+            {
+                bingoLetters[i].localScale = Vector3.zero;
+            }
+
             InitColumn(columnB, 1, 15);
             InitColumn(columnI, 16, 30);
             InitColumn(columnG, 31, 45);
@@ -46,20 +59,18 @@ namespace OleksiiStepanov.Gameplay
             int count = Math.Min(columnElements.Count, randomValueList.Count);
             for (int i = 0; i < count; i++)
             {
-                columnElements[i].Init(randomValueList[i]);
+                columnElements[i].Init(this, randomValueList[i]);
             }
         }
 
         private void OnEnable()
         {
             BingoSequence.OnNewBingoNumberCreated += OnNewBingoNumberCreated; 
-            BingoFieldElement.OnButtonClick += OnBingoFieldElementButtonClick;
         }
 
         private void OnDisable()
         {
             BingoSequence.OnNewBingoNumberCreated -= OnNewBingoNumberCreated;
-            BingoFieldElement.OnButtonClick -= OnBingoFieldElementButtonClick;
         }
 
         private void OnNewBingoNumberCreated(int number)
@@ -75,7 +86,7 @@ namespace OleksiiStepanov.Gameplay
             }
         }
 
-        private void OnBingoFieldElementButtonClick(BingoFieldElement bingoFieldElement)
+        public void OnBingoFieldElementButtonClick(BingoFieldElement bingoFieldElement)
         {
             foreach (var bingoNumber in _currentBingoNumbers)
             {
@@ -89,7 +100,7 @@ namespace OleksiiStepanov.Gameplay
         }
 
         private void CheckBingoCombinations()
-        {
+        {   
             foreach (var bingoCombination in _bingoCombinations)
             {
                 int counter = 0;
@@ -101,7 +112,7 @@ namespace OleksiiStepanov.Gameplay
                         counter++;
                     }
                 }
-
+            
                 if (counter != bingoCombination.Length) continue;
                 
                 SetAsDone();
@@ -114,12 +125,34 @@ namespace OleksiiStepanov.Gameplay
             activeState.SetActive(false);
             doneState.SetActive(true);
             
-            OnBingoFieldCompleted?.Invoke();
+            PlayShakeAnimation();
+            PlayDoneStateAnimation(() =>
+            {
+                OnBingoFieldCompleted?.Invoke();    
+            });
         }
 
         public void PlayShakeAnimation()
         {
             contentTransform.DOShakeScale(.2f, .2f);
+        }
+
+        private void PlayDoneStateAnimation(Action onAnimationComplete = null)
+        {
+            Sequence sequence = DOTween.Sequence();
+
+            sequence.Append(doneStateBackground.DOFade(1, 0.1f));
+
+            foreach (var letter in bingoLetters)
+            {
+                sequence.Append(letter.DOScale(1.5f, 0.065f));
+                sequence.Append(letter.DOScale(1f, 0.065f));
+            }
+
+            sequence.AppendCallback(() =>
+            {
+                onAnimationComplete?.Invoke();
+            });
         }
     }
 }

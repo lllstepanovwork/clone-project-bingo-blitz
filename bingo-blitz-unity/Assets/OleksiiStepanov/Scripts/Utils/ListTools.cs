@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using Random = System.Random;
 using System.Linq;
+using Random = System.Random;
 
 namespace OleksiiStepanov.Utils
 {

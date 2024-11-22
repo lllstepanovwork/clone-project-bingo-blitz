@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace OleksiiStepanov.UI
 {
@@ -10,50 +9,60 @@ namespace OleksiiStepanov.UI
     {
         [Header("Content")] 
         [SerializeField] private List<GameplayPanelLayout> layouts;
+        [SerializeField] private Transform backButtonTransform;
 
         [Header("Go Text Image")] 
         [SerializeField] private RectTransform goTextImageRectTransform;
-        [SerializeField] private Image goTextImage;
+        [SerializeField] private RectTransform gameOverTextTransform;
 
-        private GameplayPanelLayout currentLayout;
+        private GameplayPanelLayout _currentLayout;
         
         public void Init(int numberOfFields)
         {
             HideAllLayouts();
 
-            currentLayout = layouts[numberOfFields-1];
-            currentLayout.gameObject.SetActive(true);
-            currentLayout.Init();
+            _currentLayout = layouts[numberOfFields-1];
+            _currentLayout.gameObject.SetActive(true);
+            _currentLayout.Init();
         }
 
         public void StartGame()
         {
-            AnimateGoTextImage(() =>
+            AnimateTextMessage(goTextImageRectTransform, () =>
             {
-                currentLayout.StartGame();
+                _currentLayout.StartGame();
             });
         }
-
+        
         public override void OnUIPanelOpened()
         {
-            currentLayout.PlayShakeAnimation();
+            backButtonTransform.gameObject.SetActive(true);
+            backButtonTransform.DOShakeScale(0.2f, 0.5f);
+            
+            _currentLayout.PlayShakeAnimation();
         }
 
-        private void AnimateGoTextImage(Action onComplete = null)
+        public void OnBackButtonClicked()
         {
-            goTextImage.gameObject.SetActive(true);
-            goTextImageRectTransform.anchoredPosition = new Vector2(0, -2000);
+            backButtonTransform.gameObject.SetActive(false);
             
-            Sequence seq = DOTween.Sequence();
+            _currentLayout.StopGame();
+            UIManager.Instance.OpenLevelPanel();
+        }
 
-            seq.Append(goTextImageRectTransform.DOAnchorPos(Vector2.zero, 0.25f))
-                .Join(goTextImage.DOFade(1, 0.1f))
+        private void AnimateTextMessage(RectTransform textMessageRectTransform, Action onComplete = null)
+        {
+            textMessageRectTransform.gameObject.SetActive(true);
+            textMessageRectTransform.anchoredPosition = new Vector2(0, -2000);
+            
+            var sequence = DOTween.Sequence();
+
+            sequence.Append(textMessageRectTransform.DOAnchorPos(Vector2.zero, 0.75f).SetEase(Ease.Linear))
                 .AppendInterval(1f)
-                .Append(goTextImageRectTransform.DOAnchorPosY(2000, 0.5f))
-                .Join(goTextImage.DOFade(0, 1f))
+                .Append(textMessageRectTransform.DOAnchorPosY(2000, 0.5f))
                 .AppendCallback(() =>
                 {
-                    goTextImage.gameObject.SetActive(false); 
+                    textMessageRectTransform.gameObject.SetActive(false); 
                     onComplete?.Invoke();
                 });
         }
@@ -64,6 +73,23 @@ namespace OleksiiStepanov.UI
             {
                 layout.gameObject.SetActive(false);
             }
+        }
+        
+        private void OnEnable()
+        {
+            GameplayPanelLayout.OnGameOver += OnGameOver;
+        }
+        
+        private void OnDisable()
+        {
+            GameplayPanelLayout.OnGameOver -= OnGameOver;
+        }
+
+        private void OnGameOver()
+        {
+            backButtonTransform.gameObject.SetActive(false);
+            
+            AnimateTextMessage(gameOverTextTransform, OnBackButtonClicked);
         }
     }    
 }

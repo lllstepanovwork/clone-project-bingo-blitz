@@ -1,8 +1,8 @@
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using DG.Tweening;
 using OleksiiStepanov.Game;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace OleksiiStepanov.Gameplay
 {
@@ -15,10 +15,17 @@ namespace OleksiiStepanov.Gameplay
         [SerializeField] private CanvasGroup canvasGroup;
         [SerializeField] private TMP_Text numberText;
         
-        private bool _initialized = false;
-        public void Init(int number, Sprite ballSprite)
+        private bool _showed = false;
+        
+        public void Init()
         {
-            _initialized = true;
+            _showed = false;
+            canvasGroup.alpha = 0;
+        }
+
+        public void Show(int number, Sprite ballSprite)
+        {
+            _showed = true;
          
             mainRectTransform.localScale = Vector3.one;
             numberText.text = number.ToString();
@@ -34,7 +41,7 @@ namespace OleksiiStepanov.Gameplay
 
         public void Hide(BingoSequenceTransparencyType bingoSequenceTransparencyType)
         {
-            if (!_initialized)
+            if (!_showed)
             {
                 return;
             }

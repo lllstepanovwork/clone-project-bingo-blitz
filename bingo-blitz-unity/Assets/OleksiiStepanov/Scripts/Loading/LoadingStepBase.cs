@@ -1,6 +1,6 @@
 ﻿using System;
-using UnityEngine;
 using OleksiiStepanov.Game;
+using UnityEngine;
 
 namespace OleksiiStepanov.Loading
 {

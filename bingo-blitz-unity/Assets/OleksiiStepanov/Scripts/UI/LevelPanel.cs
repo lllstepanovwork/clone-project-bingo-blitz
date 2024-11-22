@@ -1,7 +1,7 @@
+using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using DG.Tweening;
 
 namespace OleksiiStepanov.UI
 {
@@ -30,6 +30,7 @@ namespace OleksiiStepanov.UI
         public void Init()
         {
             LayoutNumber = MIN_LAYOUT_NUMBER;
+            UpdateLayoutText();
         }
         
         public override void OnUIPanelOpened()
@@ -65,7 +66,6 @@ namespace OleksiiStepanov.UI
 
         public void OnPlayButtonClicked()
         {
-            Debug.Log(LayoutNumber);
             UIManager.Instance.OpenGameplayPanel(LayoutNumber);
         }
     }    

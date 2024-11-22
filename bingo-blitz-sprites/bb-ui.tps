@@ -178,7 +178,9 @@
             <key type="filename">UI/BingoBalls/bb-ball-i.png</key>
             <key type="filename">UI/BingoBalls/bb-ball-n.png</key>
             <key type="filename">UI/BingoBalls/bb-ball-o.png</key>
-            <key type="filename">UI/BingoGameplay/bb-number-holder-done.png</key>
+            <key type="filename">UI/BingoGameplay/bb-number-holder-star.png</key>
+            <key type="filename">UI/General/bb-back-button.png</key>
+            <key type="filename">UI/General/bb-go-text.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -193,7 +195,14 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-!.png</key>
+            <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-b.png</key>
+            <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-g.png</key>
+            <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-i.png</key>
+            <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-n.png</key>
+            <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-o.png</key>
             <key type="filename">UI/BingoGameplay/bb-number-holder.png</key>
+            <key type="filename">UI/General/bb-back-button-icon.png</key>
             <key type="filename">UI/General/bb-bingo-field-icon.png</key>
             <key type="filename">UI/General/bb-minus-button.png</key>
             <key type="filename">UI/General/bb-plus-button.png</key>
@@ -213,6 +222,7 @@
             </struct>
             <key type="filename">UI/BingoGameplay/bb-panel-background.png</key>
             <key type="filename">UI/General/bb-green-button.png</key>
+            <key type="filename">UI/General/bb-orange-button.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>

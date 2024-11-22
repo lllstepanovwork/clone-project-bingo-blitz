@@ -153,7 +153,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 249
-        y: 991
+        y: 479
         width: 32
         height: 32
       alignment: 0
@@ -174,8 +174,8 @@ TextureImporter:
       name: bb-ui-general-texture
       rect:
         serializedVersion: 2
-        x: 489
-        y: 991
+        x: 507
+        y: 479
         width: 32
         height: 32
       alignment: 0
@@ -196,8 +196,8 @@ TextureImporter:
       name: BingoBalls-bb-ball-b
       rect:
         serializedVersion: 2
-        x: 741
-        y: 581
+        x: 639
+        y: 5
         width: 256
         height: 256
       alignment: 0
@@ -218,8 +218,8 @@ TextureImporter:
       name: BingoBalls-bb-ball-g
       rect:
         serializedVersion: 2
-        x: 368
-        y: 514
+        x: 123
+        y: 10
         width: 256
         height: 256
       alignment: 0
@@ -240,8 +240,8 @@ TextureImporter:
       name: BingoBalls-bb-ball-i
       rect:
         serializedVersion: 2
-        x: 517
-        y: 767
+        x: 381
+        y: 7
         width: 256
         height: 256
       alignment: 0
@@ -262,8 +262,8 @@ TextureImporter:
       name: BingoBalls-bb-ball-n
       rect:
         serializedVersion: 2
-        x: 259
-        y: 767
+        x: 517
+        y: 255
         width: 256
         height: 256
       alignment: 0
@@ -284,8 +284,8 @@ TextureImporter:
       name: BingoBalls-bb-ball-o
       rect:
         serializedVersion: 2
-        x: 110
-        y: 520
+        x: 259
+        y: 255
         width: 256
         height: 256
       alignment: 0
@@ -306,8 +306,8 @@ TextureImporter:
       name: BingoGameplay-bb-number-holder
       rect:
         serializedVersion: 2
-        x: 131
-        y: 390
+        x: 1269
+        y: 383
         width: 128
         height: 128
       alignment: 0
@@ -328,8 +328,8 @@ TextureImporter:
       name: BingoGameplay-bb-panel-background
       rect:
         serializedVersion: 2
-        x: 1
-        y: 68
+        x: 1399
+        y: 383
         width: 128
         height: 128
       alignment: 0
@@ -350,8 +350,8 @@ TextureImporter:
       name: General-bb-bingo-field-icon
       rect:
         serializedVersion: 2
-        x: 131
-        y: 266
+        x: 1145
+        y: 389
         width: 122
         height: 122
       alignment: 0
@@ -372,8 +372,8 @@ TextureImporter:
       name: General-bb-green-button
       rect:
         serializedVersion: 2
-        x: 1
-        y: 198
+        x: 1529
+        y: 383
         width: 128
         height: 128
       alignment: 0
@@ -394,8 +394,8 @@ TextureImporter:
       name: General-bb-minus-button
       rect:
         serializedVersion: 2
-        x: 1
-        y: 328
+        x: 1659
+        y: 383
         width: 128
         height: 128
       alignment: 0
@@ -416,8 +416,8 @@ TextureImporter:
       name: General-bb-panel-header
       rect:
         serializedVersion: 2
-        x: 1
-        y: 588
+        x: 1977
+        y: 139
         width: 70
         height: 128
       alignment: 0
@@ -438,8 +438,8 @@ TextureImporter:
       name: General-bb-plus-button
       rect:
         serializedVersion: 2
-        x: 626
-        y: 525
+        x: 1919
+        y: 383
         width: 128
         height: 128
       alignment: 0
@@ -461,7 +461,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 767
+        y: 255
         width: 256
         height: 256
       alignment: 0
@@ -482,8 +482,8 @@ TextureImporter:
       name: General-bb-go-text
       rect:
         serializedVersion: 2
-        x: 768
-        y: 864
+        x: 769
+        y: 352
         width: 255
         height: 159
       alignment: 9
@@ -504,13 +504,13 @@ TextureImporter:
       name: General-bb-orange-button
       rect:
         serializedVersion: 2
-        x: 1
-        y: 458
+        x: 1789
+        y: 383
         width: 128
         height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 64, y: 64, z: 64, w: 64}
       customData: 
       outline: []
       physicsShape: []
@@ -526,8 +526,8 @@ TextureImporter:
       name: BingoGameplay-bb-number-holder-star
       rect:
         serializedVersion: 2
-        x: 293
-        y: 435
+        x: 4
+        y: 135
         width: 128
         height: 128
       alignment: 0
@@ -540,6 +540,160 @@ TextureImporter:
       bones: []
       spriteID: 3b278deb84dc5444690487dfbc3e618d
       internalID: 1818554826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BingoGameplay-Bingo-bb-bingo-letter-!
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 356
+        width: 67
+        height: 117
+      alignment: 9
+      pivot: {x: 0.49253732, y: 0.4871795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98d8af3bfcc146d0947e95766994d28
+      internalID: 81534419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BingoGameplay-Bingo-bb-bingo-letter-b
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 269
+        width: 87
+        height: 112
+      alignment: 9
+      pivot: {x: 0.49425286, y: 0.52678573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141f168a8061345769316278de5ce281
+      internalID: 764576582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BingoGameplay-Bingo-bb-bingo-letter-g
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 389
+        width: 82
+        height: 122
+      alignment: 9
+      pivot: {x: 0.5243902, y: 0.5163934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b737662744f73415faf24f4b95c3ea07
+      internalID: 2001222409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BingoGameplay-Bingo-bb-bingo-letter-i
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 157
+        width: 30
+        height: 109
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5229358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786f387ef10c3457aac65b5554b8ad7c
+      internalID: 1293095683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BingoGameplay-Bingo-bb-bingo-letter-n
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 28
+        width: 68
+        height: 109
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5229358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49ec506538eb4a72ad0c79b64b46318
+      internalID: -1960804153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BingoGameplay-Bingo-bb-bingo-letter-o
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 77
+        height: 122
+      alignment: 9
+      pivot: {x: 0.48051947, y: 0.5081967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9b6640888e84af8b6f88be3f8d386a
+      internalID: -346453951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General-bb-back-button-icon
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 344
+        width: 98
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5510204, y: 0.45614034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1429e9e7020a1485a85d30cc2c417e5c
+      internalID: 1593540709
       vertices: []
       indices: 
       edges: []
@@ -563,10 +717,17 @@ TextureImporter:
       BingoBalls-bb-ball-i: -883191211
       BingoBalls-bb-ball-n: -843984682
       BingoBalls-bb-ball-o: 360182540
+      BingoGameplay-Bingo-bb-bingo-letter-!: 81534419
+      BingoGameplay-Bingo-bb-bingo-letter-b: 764576582
+      BingoGameplay-Bingo-bb-bingo-letter-g: 2001222409
+      BingoGameplay-Bingo-bb-bingo-letter-i: 1293095683
+      BingoGameplay-Bingo-bb-bingo-letter-n: -1960804153
+      BingoGameplay-Bingo-bb-bingo-letter-o: -346453951
       BingoGameplay-bb-number-holder: 2114808137
       BingoGameplay-bb-number-holder-star: 1818554826
       BingoGameplay-bb-panel-background: 1241728846
       General-bb-back-button: -219781161
+      General-bb-back-button-icon: 1593540709
       General-bb-bingo-field-icon: 1592309941
       General-bb-go-text: -716585680
       General-bb-green-button: 1206109117
