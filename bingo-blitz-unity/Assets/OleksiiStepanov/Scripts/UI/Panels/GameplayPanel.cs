@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
+using OleksiiStepanov.Game;
+using OleksiiStepanov.Gameplay;
 
 namespace OleksiiStepanov.UI
 {
@@ -10,10 +13,10 @@ namespace OleksiiStepanov.UI
         [Header("Content")] 
         [SerializeField] private List<GameplayPanelLayout> layouts;
         [SerializeField] private Transform backButtonTransform;
-
-        [Header("Go Text Image")] 
-        [SerializeField] private RectTransform goTextImageRectTransform;
-        [SerializeField] private RectTransform gameOverTextTransform;
+        
+        [Header("Message Text")]
+        [SerializeField] private TMP_Text messageText;
+        [SerializeField] private RectTransform messageTextRectTransform;
 
         private GameplayPanelLayout _currentLayout;
         
@@ -28,7 +31,8 @@ namespace OleksiiStepanov.UI
 
         public void StartGame()
         {
-            AnimateTextMessage(goTextImageRectTransform, () =>
+            messageText.text = Constants.GAMEPLAY_MESSAGE_GO;
+            AnimateMessageText(() =>
             {
                 _currentLayout.StartGame();
             });
@@ -50,19 +54,19 @@ namespace OleksiiStepanov.UI
             UIManager.Instance.OpenLevelPanel();
         }
 
-        private void AnimateTextMessage(RectTransform textMessageRectTransform, Action onComplete = null)
+        private void AnimateMessageText(Action onComplete = null)
         {
-            textMessageRectTransform.gameObject.SetActive(true);
-            textMessageRectTransform.anchoredPosition = new Vector2(0, -2000);
+            messageTextRectTransform.gameObject.SetActive(true);
+            messageTextRectTransform.anchoredPosition = new Vector2(0, -2000);
             
             var sequence = DOTween.Sequence();
 
-            sequence.Append(textMessageRectTransform.DOAnchorPos(Vector2.zero, 0.75f).SetEase(Ease.Linear))
+            sequence.Append(messageTextRectTransform.DOAnchorPos(Vector2.zero, 0.75f).SetEase(Ease.Linear))
                 .AppendInterval(1f)
-                .Append(textMessageRectTransform.DOAnchorPosY(2000, 0.5f))
+                .Append(messageTextRectTransform.DOAnchorPosY(2000, 0.5f))
                 .AppendCallback(() =>
                 {
-                    textMessageRectTransform.gameObject.SetActive(false); 
+                    messageTextRectTransform.gameObject.SetActive(false); 
                     onComplete?.Invoke();
                 });
         }
@@ -77,19 +81,32 @@ namespace OleksiiStepanov.UI
         
         private void OnEnable()
         {
-            GameplayPanelLayout.OnGameOver += OnGameOver;
+            GameplayPanelLayout.OnWin += OnWin;
+            BingoSequence.OnSequenceFinished += OnBingoSequenceFinished;
         }
         
         private void OnDisable()
         {
-            GameplayPanelLayout.OnGameOver -= OnGameOver;
+            GameplayPanelLayout.OnWin -= OnWin;
+            BingoSequence.OnSequenceFinished -= OnBingoSequenceFinished;
         }
 
-        private void OnGameOver()
+        private void OnWin()
         {
             backButtonTransform.gameObject.SetActive(false);
             
-            AnimateTextMessage(gameOverTextTransform, OnBackButtonClicked);
+            messageText.text = Constants.GAMEPLAY_MESSAGE_YOU_WON;
+            
+            AnimateMessageText(OnBackButtonClicked);
+        }
+
+        private void OnBingoSequenceFinished()
+        {
+            backButtonTransform.gameObject.SetActive(false);
+            
+            messageText.text = Constants.GAMEPLAY_MESSAGE_ROUND_OVER;
+            
+            AnimateMessageText(OnBackButtonClicked);
         }
     }    
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using OleksiiStepanov.Game;
 using OleksiiStepanov.Utils;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace OleksiiStepanov.Gameplay
@@ -15,6 +16,8 @@ namespace OleksiiStepanov.Gameplay
         private readonly CountdownTimer _countdownTimer = new CountdownTimer(Constants.BINGO_SEQUENCE_FIRST_TIME);
 
         [SerializeField] private List<Sprite> bingoBallsSprites = new List<Sprite>();
+
+        public static event Action OnSequenceFinished;
         public static event Action<int> OnNewBingoNumberCreated;
         
         private void OnEnable()
@@ -49,6 +52,12 @@ namespace OleksiiStepanov.Gameplay
 
         private void OnTimerEnd()
         {
+            if (bingoSequence.Count <= 0)
+            {
+                OnSequenceFinished?.Invoke();
+                return;
+            }
+
             ListTools.MoveLastToFirst(bingoBalls);
             
             var number = bingoSequence[0];

@@ -929,81 +929,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
---- !u!1 &181382634
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 181382635}
-  - component: {fileID: 181382637}
-  - component: {fileID: 181382636}
-  m_Layer: 5
-  m_Name: GoTextImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &181382635
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181382634}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1609573477}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &181382636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181382634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -716585680, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 1
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &181382637
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181382634}
-  m_CullTransparentMesh: 1
 --- !u!1001 &191775130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2092,7 +2017,7 @@ GameObject:
   - component: {fileID: 342865174}
   - component: {fileID: 342865173}
   m_Layer: 5
-  m_Name: GameOverText
+  m_Name: MessageText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2137,7 +2062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Over!
+  m_text: GO!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 080cbeb1fe5b0490c8d07cb1e4d09cff, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 27eca737fa1cd4ff6aa572ad36a3f0cf, type: 2}
@@ -5548,8 +5473,8 @@ MonoBehaviour:
   - {fileID: 344350537}
   - {fileID: 1461844269}
   backButtonTransform: {fileID: 1896774818}
-  goTextImageRectTransform: {fileID: 181382635}
-  gameOverTextTransform: {fileID: 342865172}
+  messageText: {fileID: 342865173}
+  messageTextRectTransform: {fileID: 342865172}
 --- !u!225 &1327264787
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6355,7 +6280,6 @@ RectTransform:
   - {fileID: 461336184}
   - {fileID: 344350536}
   - {fileID: 1461844268}
-  - {fileID: 181382635}
   - {fileID: 342865172}
   m_Father: {fileID: 1327264785}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -13,7 +13,7 @@ namespace OleksiiStepanov.UI
 
         private int _bingoFieldDoneCounter = 0;
         
-        public static event Action OnGameOver; 
+        public static event Action OnWin; 
         
         public void Init()
         {
@@ -62,7 +62,7 @@ namespace OleksiiStepanov.UI
             if (_bingoFieldDoneCounter != bingoFields.Count) return;
             
             bingoSequence.Stop();
-            OnGameOver?.Invoke();
+            OnWin?.Invoke();
         }
     }
 }
