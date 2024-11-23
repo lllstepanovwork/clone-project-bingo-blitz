@@ -21,11 +21,11 @@ namespace OleksiiStepanov.UI
                 })
                 .Append(leftSide.DOAnchorPosX(0, 0.5f))
                 .Join(rightSide.DOAnchorPosX(0, 0.5f))
+                .AppendInterval(0.5f)
                 .AppendCallback(() =>
                 {
                     onMiddlePoint?.Invoke();       
                 })
-                .AppendInterval(0.5f)
                 .Append(leftSide.DOAnchorPosX(-2000, 0.5f))
                 .Join(rightSide.DOAnchorPosX(2000, 0.5f))
                 .AppendCallback(() =>

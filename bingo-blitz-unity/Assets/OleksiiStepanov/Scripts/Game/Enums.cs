@@ -17,17 +17,6 @@
     }
 
     #endregion
-
-    #region UI
-
-    public enum UIBasePanelAnimationType
-    {
-        Fade,
-        FromBottom,
-        Scale
-    }
-
-    #endregion
     
     #region Gameplay
 

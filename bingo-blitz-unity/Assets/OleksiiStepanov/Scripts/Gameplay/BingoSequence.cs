@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using OleksiiStepanov.Game;
 using OleksiiStepanov.Utils;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace OleksiiStepanov.Gameplay

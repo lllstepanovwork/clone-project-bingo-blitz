@@ -205,6 +205,7 @@
             <key type="filename">UI/General/bb-bingo-field-icon.png</key>
             <key type="filename">UI/General/bb-minus-button.png</key>
             <key type="filename">UI/General/bb-plus-button.png</key>
+            <key type="filename">UI/General/loading-bar-frame.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -284,6 +285,39 @@
                 <rect>35,0,0,128</rect>
                 <key>scale9Paddings</key>
                 <rect>32,32,64,64</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">UI/General/loading-bar-frame-fill.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <true/>
+                <key>scale9Borders</key>
+                <rect>64,0,0,128</rect>
+                <key>scale9Paddings</key>
+                <rect>32,32,64,64</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">UI/Logo/bb-light-fx.png</key>
+            <key type="filename">UI/Logo/bb-logo-back.png</key>
+            <key type="filename">UI/Logo/bb-logo-text.png</key>
+            <key type="filename">UI/bb-cloud.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>128,128,256,256</rect>
+                <key>scale9Paddings</key>
+                <rect>128,128,256,256</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>

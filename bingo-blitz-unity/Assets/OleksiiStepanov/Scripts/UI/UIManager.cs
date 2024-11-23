@@ -8,17 +8,17 @@ namespace OleksiiStepanov.UI
     {
         [SerializeField] private GameplayPanel gameplayPanel;
         [SerializeField] private LevelPanel levelPanel;
+        [SerializeField] private LoadingPanel loadingPanel;
         [SerializeField] private TransitionPanel transitionPanel;
-
+        
         private readonly UIPanelOpener _uIPanelOpener = new UIPanelOpener();
         
         private UIPanel _currentUIPanel;
 
         public void Init(Action onComplete = null)
         {
-            _currentUIPanel = levelPanel;
-            _uIPanelOpener.OpenPanel(levelPanel);
-            levelPanel.Init();
+            _currentUIPanel = loadingPanel;
+            _uIPanelOpener.OpenPanel(loadingPanel);
             
             onComplete?.Invoke();
         }

@@ -152,8 +152,8 @@ TextureImporter:
       name: bb-ui-general-circle-texture
       rect:
         serializedVersion: 2
-        x: 1
-        y: 209
+        x: 2015
+        y: 232
         width: 32
         height: 32
       alignment: 0
@@ -174,8 +174,8 @@ TextureImporter:
       name: bb-ui-general-texture
       rect:
         serializedVersion: 2
-        x: 689
-        y: 486
+        x: 1458
+        y: 991
         width: 32
         height: 32
       alignment: 0
@@ -196,8 +196,8 @@ TextureImporter:
       name: BingoBalls-bb-ball-b
       rect:
         serializedVersion: 2
-        x: 259
-        y: 227
+        x: 1791
+        y: 251
         width: 256
         height: 256
       alignment: 0
@@ -218,8 +218,8 @@ TextureImporter:
       name: BingoBalls-bb-ball-g
       rect:
         serializedVersion: 2
-        x: 259
-        y: 485
+        x: 1791
+        y: 509
         width: 256
         height: 256
       alignment: 0
@@ -240,8 +240,8 @@ TextureImporter:
       name: BingoBalls-bb-ball-i
       rect:
         serializedVersion: 2
-        x: 1
-        y: 227
+        x: 1791
+        y: 767
         width: 256
         height: 256
       alignment: 0
@@ -262,8 +262,8 @@ TextureImporter:
       name: BingoBalls-bb-ball-n
       rect:
         serializedVersion: 2
-        x: 1
-        y: 485
+        x: 1022
+        y: 767
         width: 256
         height: 256
       alignment: 0
@@ -284,8 +284,8 @@ TextureImporter:
       name: BingoBalls-bb-ball-o
       rect:
         serializedVersion: 2
-        x: 622
-        y: 520
+        x: 663
+        y: 179
         width: 256
         height: 256
       alignment: 0
@@ -306,8 +306,8 @@ TextureImporter:
       name: BingoGameplay-bb-number-holder
       rect:
         serializedVersion: 2
-        x: 876
-        y: 335
+        x: 1661
+        y: 571
         width: 128
         height: 128
       alignment: 0
@@ -328,8 +328,8 @@ TextureImporter:
       name: BingoGameplay-bb-panel-background
       rect:
         serializedVersion: 2
-        x: 841
-        y: 75
+        x: 1558
+        y: 701
         width: 128
         height: 128
       alignment: 0
@@ -350,8 +350,8 @@ TextureImporter:
       name: General-bb-bingo-field-icon
       rect:
         serializedVersion: 2
-        x: 877
-        y: 465
+        x: 1537
+        y: 577
         width: 122
         height: 122
       alignment: 0
@@ -372,8 +372,8 @@ TextureImporter:
       name: General-bb-green-button
       rect:
         serializedVersion: 2
-        x: 845
-        y: 205
+        x: 1428
+        y: 701
         width: 128
         height: 128
       alignment: 0
@@ -394,8 +394,8 @@ TextureImporter:
       name: General-bb-minus-button
       rect:
         serializedVersion: 2
-        x: 711
-        y: 75
+        x: 302
+        y: 22
         width: 128
         height: 128
       alignment: 0
@@ -416,8 +416,8 @@ TextureImporter:
       name: General-bb-panel-header
       rect:
         serializedVersion: 2
-        x: 550
-        y: 567
+        x: 1688
+        y: 701
         width: 70
         height: 128
       alignment: 0
@@ -438,8 +438,8 @@ TextureImporter:
       name: General-bb-plus-button
       rect:
         serializedVersion: 2
-        x: 715
-        y: 205
+        x: 1
+        y: 13
         width: 128
         height: 128
       alignment: 0
@@ -460,8 +460,8 @@ TextureImporter:
       name: General-bb-back-button
       rect:
         serializedVersion: 2
-        x: 513
-        y: 767
+        x: 405
+        y: 179
         width: 256
         height: 256
       alignment: 0
@@ -482,8 +482,8 @@ TextureImporter:
       name: General-bb-orange-button
       rect:
         serializedVersion: 2
-        x: 581
-        y: 54
+        x: 432
+        y: 49
         width: 128
         height: 128
       alignment: 0
@@ -504,8 +504,8 @@ TextureImporter:
       name: BingoGameplay-bb-number-holder-star
       rect:
         serializedVersion: 2
-        x: 419
-        y: 84
+        x: 1080
+        y: 615
         width: 128
         height: 128
       alignment: 0
@@ -526,8 +526,8 @@ TextureImporter:
       name: BingoGameplay-Bingo-bb-bingo-letter-!
       rect:
         serializedVersion: 2
-        x: 10
-        y: 906
+        x: 1
+        y: 426
         width: 67
         height: 117
       alignment: 9
@@ -548,8 +548,8 @@ TextureImporter:
       name: BingoGameplay-Bingo-bb-bingo-letter-b
       rect:
         serializedVersion: 2
-        x: 556
-        y: 424
+        x: 1916
+        y: 108
         width: 87
         height: 112
       alignment: 9
@@ -570,8 +570,8 @@ TextureImporter:
       name: BingoGameplay-Bingo-bb-bingo-letter-g
       rect:
         serializedVersion: 2
-        x: 570
-        y: 206
+        x: 956
+        y: 326
         width: 82
         height: 122
       alignment: 9
@@ -592,8 +592,8 @@ TextureImporter:
       name: BingoGameplay-Bingo-bb-bingo-letter-i
       rect:
         serializedVersion: 2
-        x: 518
-        y: 564
+        x: 407
+        y: 416
         width: 30
         height: 109
       alignment: 9
@@ -614,8 +614,8 @@ TextureImporter:
       name: BingoGameplay-Bingo-bb-bingo-letter-n
       rect:
         serializedVersion: 2
-        x: 880
-        y: 589
+        x: 1721
+        y: 831
         width: 68
         height: 109
       alignment: 9
@@ -636,8 +636,8 @@ TextureImporter:
       name: BingoGameplay-Bingo-bb-bingo-letter-o
       rect:
         serializedVersion: 2
-        x: 233
-        y: 71
+        x: 1272
+        y: 672
         width: 77
         height: 122
       alignment: 9
@@ -658,8 +658,8 @@ TextureImporter:
       name: General-bb-back-button-icon
       rect:
         serializedVersion: 2
-        x: 189
-        y: 457
+        x: 1323
+        y: 919
         width: 98
         height: 57
       alignment: 9
@@ -680,7 +680,7 @@ TextureImporter:
       name: ComboCounter-bb-combo-counter-1
       rect:
         serializedVersion: 2
-        x: 771
+        x: 1474
         y: 831
         width: 192
         height: 192
@@ -702,8 +702,8 @@ TextureImporter:
       name: ComboCounter-bb-combo-counter-green-bar
       rect:
         serializedVersion: 2
-        x: 195
-        y: 37
+        x: 1234
+        y: 638
         width: 192
         height: 191
       alignment: 9
@@ -724,8 +724,8 @@ TextureImporter:
       name: ComboCounter-bb-combo-counter-grey-bar
       rect:
         serializedVersion: 2
-        x: 389
-        y: 43
+        x: 1050
+        y: 574
         width: 190
         height: 191
       alignment: 9
@@ -746,8 +746,8 @@ TextureImporter:
       name: ComboCounter-bb-combo-counter-pin
       rect:
         serializedVersion: 2
-        x: 75
-        y: 79
+        x: 1760
+        y: 701
         width: 42
         height: 100
       alignment: 0
@@ -768,8 +768,8 @@ TextureImporter:
       name: ComboCounter-bb-combo-counter-star
       rect:
         serializedVersion: 2
-        x: 689
-        y: 333
+        x: 562
+        y: 40
         width: 185
         height: 185
       alignment: 9
@@ -790,8 +790,8 @@ TextureImporter:
       name: ComboCounter-bb-combo-counter-white-gradient
       rect:
         serializedVersion: 2
-        x: 1
-        y: 33
+        x: 1280
+        y: 831
         width: 192
         height: 192
       alignment: 0
@@ -812,8 +812,8 @@ TextureImporter:
       name: ComboCounter-bb-combo-counter-yellow-bar
       rect:
         serializedVersion: 2
-        x: 495
-        y: 374
+        x: 1855
+        y: 58
         width: 192
         height: 191
       alignment: 9
@@ -834,8 +834,8 @@ TextureImporter:
       name: ComboCounter-bb-combo-counter-red-bar
       rect:
         serializedVersion: 2
-        x: 526
-        y: 184
+        x: 912
+        y: 304
         width: 187
         height: 192
       alignment: 9
@@ -856,8 +856,8 @@ TextureImporter:
       name: bb-cloud
       rect:
         serializedVersion: 2
-        x: 1
-        y: 743
+        x: 443
+        y: 437
         width: 512
         height: 280
       alignment: 9
@@ -870,6 +870,116 @@ TextureImporter:
       bones: []
       spriteID: 175adabc6509a46149ffa6652b5c743f
       internalID: -47016691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo-bb-logo-back
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 102
+        width: 402
+        height: 407
+      alignment: 9
+      pivot: {x: 0.49004975, y: 0.5036855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd258b9990c148169dd38c70e9c1e50
+      internalID: -1651279395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo-bb-logo-text
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 714
+        width: 505
+        height: 309
+      alignment: 9
+      pivot: {x: 0.5029703, y: 0.7152104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94ea9a32306c413d9e1cd43842c9f55
+      internalID: 1301452049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo-bb-light-fx
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 511
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42fe6d231c13434686968d8e61ffd04
+      internalID: -1446493035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General-loading-bar-frame
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 49
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 64, y: 0, z: 64, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d60881b09f34139919755578e7e068
+      internalID: -805271191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: General-loading-bar-frame-fill
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 65
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 64, y: 0, z: 64, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c2cdea42fd847d8a9e9d22f92170b7
+      internalID: 261766206
       vertices: []
       indices: 
       edges: []
@@ -918,6 +1028,11 @@ TextureImporter:
       General-bb-orange-button: 724773449
       General-bb-panel-header: 603682837
       General-bb-plus-button: 1223719062
+      General-loading-bar-frame: -805271191
+      General-loading-bar-frame-fill: 261766206
+      Logo-bb-light-fx: -1446493035
+      Logo-bb-logo-back: -1651279395
+      Logo-bb-logo-text: 1301452049
       bb-cloud: -47016691
       bb-ui-general-circle-texture: 1122798141
       bb-ui-general-texture: -543308983
