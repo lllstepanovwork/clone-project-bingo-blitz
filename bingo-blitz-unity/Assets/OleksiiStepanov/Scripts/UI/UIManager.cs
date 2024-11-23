@@ -8,6 +8,7 @@ namespace OleksiiStepanov.UI
     {
         [SerializeField] private GameplayPanel gameplayPanel;
         [SerializeField] private LevelPanel levelPanel;
+        [SerializeField] private TransitionPanel transitionPanel;
 
         private readonly UIPanelOpener _uIPanelOpener = new UIPanelOpener();
         
@@ -24,27 +25,30 @@ namespace OleksiiStepanov.UI
 
         public void OpenLevelPanel()
         {
-            levelPanel.Init();
-            
-            _uIPanelOpener.ClosePanel(_currentUIPanel, () =>
-            {
-                _currentUIPanel = levelPanel;
-                _uIPanelOpener.OpenPanel(levelPanel);
-            });
+            OpenPanelWithTransition(levelPanel);
         }
 
         public void OpenGameplayPanel(int layoutNumber)
         {
             gameplayPanel.Init(layoutNumber);
-            
-            _uIPanelOpener.ClosePanel(_currentUIPanel, () =>
+            OpenPanelWithTransition(gameplayPanel, null, gameplayPanel.StartGame);
+        }
+        
+        private void OpenPanelWithTransition(UIPanel uiPanel, Action onTransitionMiddlePoint = null, Action onComplete = null)
+        {
+            _uIPanelOpener.OpenPanel(transitionPanel, () =>
             {
-                _currentUIPanel = gameplayPanel;
-                
-                _uIPanelOpener.OpenPanel(gameplayPanel, () =>
+                transitionPanel.Init(() =>
                 {
-                    gameplayPanel.StartGame();
-                });
+                    _uIPanelOpener.ClosePanel(_currentUIPanel, () =>
+                    {
+                        _currentUIPanel = uiPanel;
+                    });
+                }, () =>
+                {
+                    _uIPanelOpener.OpenPanel(uiPanel);
+                    onTransitionMiddlePoint?.Invoke();
+                }, onComplete);
             });
         }
     }

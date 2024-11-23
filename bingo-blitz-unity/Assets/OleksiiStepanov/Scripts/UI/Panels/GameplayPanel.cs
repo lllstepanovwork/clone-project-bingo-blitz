@@ -64,7 +64,7 @@ namespace OleksiiStepanov.UI
             
             var sequence = DOTween.Sequence();
 
-            sequence.Append(messageTextRectTransform.DOAnchorPos(Vector2.zero, 0.75f).SetEase(Ease.Linear))
+            sequence.Append(messageTextRectTransform.DOAnchorPos(Vector2.zero, 0.5f).SetEase(Ease.Linear))
                 .AppendInterval(1f)
                 .Append(messageTextRectTransform.DOAnchorPosY(2000, 0.5f))
                 .AppendCallback(() =>
