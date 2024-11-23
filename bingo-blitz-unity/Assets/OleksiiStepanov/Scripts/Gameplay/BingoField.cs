@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using OleksiiStepanov.UI;
 using OleksiiStepanov.Utils;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 namespace OleksiiStepanov.Gameplay
 {
@@ -26,6 +28,7 @@ namespace OleksiiStepanov.Gameplay
         [SerializeField] private Image doneStateBackground;
         [SerializeField] private List<RectTransform> bingoLetters = new List<RectTransform>();
         
+        public static event Action OnMatch;
         public static event Action OnBingoFieldCompleted;
         
         private List<int[]> _bingoCombinations = new List<int[]>();
@@ -66,11 +69,13 @@ namespace OleksiiStepanov.Gameplay
         private void OnEnable()
         {
             BingoSequence.OnNewBingoNumberCreated += OnNewBingoNumberCreated; 
+            ComboCounter.OnReward += OnComboCounterReward;
         }
 
         private void OnDisable()
         {
             BingoSequence.OnNewBingoNumberCreated -= OnNewBingoNumberCreated;
+            ComboCounter.OnReward -= OnComboCounterReward;
         }
 
         private void OnNewBingoNumberCreated(int number)
@@ -85,6 +90,20 @@ namespace OleksiiStepanov.Gameplay
                 _currentBingoNumbers.Insert(0, number);
             }
         }
+        
+        private void OnComboCounterReward()
+        {
+            while (true)
+            {
+                int randomIndex = Random.Range(0, _currentBingoNumbers.Count);
+
+                if (!elements[randomIndex].Done)
+                {
+                    elements[randomIndex].SetAsDone();
+                    break;
+                }
+            }
+        }
 
         public void OnBingoFieldElementButtonClick(BingoFieldElement bingoFieldElement)
         {
@@ -93,6 +112,9 @@ namespace OleksiiStepanov.Gameplay
                 if (bingoFieldElement.Number != bingoNumber) continue;
                 
                 bingoFieldElement.SetAsDone();
+                
+                OnMatch?.Invoke();
+                
                 break;
             }
             

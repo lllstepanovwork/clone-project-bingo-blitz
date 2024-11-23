@@ -4,7 +4,7 @@ using Random = System.Random;
 
 namespace OleksiiStepanov.Utils
 {
-    public class ListTools 
+    public static class ListTools 
     {
         public static void MoveLastToFirst<T>(List<T> list)
         {

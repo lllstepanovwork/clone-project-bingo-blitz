@@ -10,7 +10,8 @@ namespace OleksiiStepanov.UI
 {
     public class GameplayPanel : UIPanel
     {
-        [Header("Content")] 
+        [Header("Content")]
+        [SerializeField] private ComboCounter comboCounter;
         [SerializeField] private List<GameplayPanelLayout> layouts;
         [SerializeField] private Transform backButtonTransform;
         
@@ -27,6 +28,8 @@ namespace OleksiiStepanov.UI
             _currentLayout = layouts[numberOfFields-1];
             _currentLayout.gameObject.SetActive(true);
             _currentLayout.Init();
+            
+            comboCounter.Init();
         }
 
         public void StartGame()

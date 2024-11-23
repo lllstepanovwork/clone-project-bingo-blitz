@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.4.0</string>
+        <string>7.5.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -180,7 +180,6 @@
             <key type="filename">UI/BingoBalls/bb-ball-o.png</key>
             <key type="filename">UI/BingoGameplay/bb-number-holder-star.png</key>
             <key type="filename">UI/General/bb-back-button.png</key>
-            <key type="filename">UI/General/bb-go-text.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -234,6 +233,42 @@
                 <rect>64,64,0,0</rect>
                 <key>scale9Paddings</key>
                 <rect>32,32,64,64</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">UI/ComboCounter/bb-combo-counter-1.png</key>
+            <key type="filename">UI/ComboCounter/bb-combo-counter-green-bar.png</key>
+            <key type="filename">UI/ComboCounter/bb-combo-counter-grey-bar.png</key>
+            <key type="filename">UI/ComboCounter/bb-combo-counter-red-bar.png</key>
+            <key type="filename">UI/ComboCounter/bb-combo-counter-star.png</key>
+            <key type="filename">UI/ComboCounter/bb-combo-counter-white-gradient.png</key>
+            <key type="filename">UI/ComboCounter/bb-combo-counter-yellow-bar.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>48,48,96,96</rect>
+                <key>scale9Paddings</key>
+                <rect>48,48,96,96</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">UI/ComboCounter/bb-combo-counter-pin.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>13,32,27,63</rect>
+                <key>scale9Paddings</key>
+                <rect>13,32,27,63</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
