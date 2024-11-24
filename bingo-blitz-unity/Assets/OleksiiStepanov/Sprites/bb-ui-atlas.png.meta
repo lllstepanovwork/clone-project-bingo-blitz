@@ -658,12 +658,12 @@ TextureImporter:
       name: General-bb-back-button-icon
       rect:
         serializedVersion: 2
-        x: 1323
-        y: 919
-        width: 98
-        height: 57
+        x: 835
+        y: 584
+        width: 213
+        height: 133
       alignment: 9
-      pivot: {x: 0.5510204, y: 0.45614034}
+      pivot: {x: 0.5492958, y: 0.518797}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
