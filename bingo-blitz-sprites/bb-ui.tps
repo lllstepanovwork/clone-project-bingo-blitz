@@ -205,7 +205,6 @@
             <key type="filename">UI/General/bb-bingo-field-icon.png</key>
             <key type="filename">UI/General/bb-minus-button.png</key>
             <key type="filename">UI/General/bb-plus-button.png</key>
-            <key type="filename">UI/General/loading-bar-frame.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -289,6 +288,7 @@
                 <false/>
             </struct>
             <key type="filename">UI/General/loading-bar-frame-fill.png</key>
+            <key type="filename">UI/General/loading-bar-frame.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>

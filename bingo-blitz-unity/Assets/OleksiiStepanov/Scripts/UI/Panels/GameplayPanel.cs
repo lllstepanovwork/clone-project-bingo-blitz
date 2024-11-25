@@ -14,6 +14,7 @@ namespace OleksiiStepanov.UI
         [SerializeField] private ComboCounter comboCounter;
         [SerializeField] private List<GameplayPanelLayout> layouts;
         [SerializeField] private Transform backButtonTransform;
+        [SerializeField] private GameObject combinationAnimation;
         
         [Header("Message Text")]
         [SerializeField] private TMP_Text messageText;
@@ -43,8 +44,14 @@ namespace OleksiiStepanov.UI
         
         public override void OnUIPanelOpened()
         {
+            comboCounter.gameObject.SetActive(true);
+            combinationAnimation.SetActive(true);
+            
             backButtonTransform.gameObject.SetActive(true);
+
             backButtonTransform.DOShakeScale(0.2f, 0.5f);
+            comboCounter.transform.DOShakeScale(0.2f, 0.5f);
+            combinationAnimation.transform.DOShakeScale(0.2f, 0.5f);
             
             _currentLayout.PlayShakeAnimation();
         }
@@ -96,7 +103,7 @@ namespace OleksiiStepanov.UI
 
         private void OnWin()
         {
-            backButtonTransform.gameObject.SetActive(false);
+            OnGameOver();
             
             messageText.text = Constants.GAMEPLAY_MESSAGE_YOU_WON;
             
@@ -105,11 +112,20 @@ namespace OleksiiStepanov.UI
 
         private void OnBingoSequenceFinished()
         {
-            backButtonTransform.gameObject.SetActive(false);
+            OnGameOver();
             
             messageText.text = Constants.GAMEPLAY_MESSAGE_ROUND_OVER;
             
             AnimateMessageText(OnBackButtonClicked);
+        }
+
+        private void OnGameOver()
+        {
+            comboCounter.gameObject.SetActive(false);
+            
+            combinationAnimation.SetActive(false);
+            
+            backButtonTransform.gameObject.SetActive(false);
         }
     }    
 }

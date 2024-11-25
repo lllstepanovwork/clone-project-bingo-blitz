@@ -138,6 +138,8 @@ namespace OleksiiStepanov.UI
                 .SetEase(Ease.Linear)
                 .OnComplete(() =>
                 {
+                    transform.DOShakeScale(0.2f, 0.5f);
+                    
                     _cooldownTweener?.Kill();
                     ShowState(ComboCounterState.CounterState);
                 });

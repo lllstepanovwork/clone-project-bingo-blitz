@@ -350,8 +350,8 @@ TextureImporter:
       name: General-bb-bingo-field-icon
       rect:
         serializedVersion: 2
-        x: 1537
-        y: 577
+        x: 1667
+        y: 190
         width: 122
         height: 122
       alignment: 0
@@ -984,6 +984,292 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-1
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 187
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb66abd7f31014c2181f138d9b495a57
+      internalID: -391619520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-10
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 443
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d267f8d4be9b45d39d73f15fa209ae5
+      internalID: -1942185710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-11
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 315
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffad580f7649f46509f247c15e2bce2c
+      internalID: -166865311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-12
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 443
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1babf8e54dca4fe0b8c79484e738287
+      internalID: 1608119611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-13
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 573
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc967b6fcba54ce8a17d15f8c34de7c
+      internalID: 1667594924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-2
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 171
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056e1244f47bd4bccbcb0a199e1f36c4
+      internalID: 481203018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-3
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 254
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b234b746011540febeaf7d617614c2a
+      internalID: -982108416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-4
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 382
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c37c8528774c43be8e0f955634566e0
+      internalID: -2030707066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-5
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 510
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710c0573a3fe34be8baf6cc06be395ef
+      internalID: -844213225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-6
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 299
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd59a727d0522416e80a1807e8ae8f69
+      internalID: 1094471194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-7
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 427
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46946bc78550e4dd8a91b8fdb883fd52
+      internalID: -1690714513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-8
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 555
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e6f011b035447778fbc7c7fb3c8183
+      internalID: -2005069511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinationHintAnimation -bb-combination-9
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 315
+        width: 122
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696ce14e142fa4c68b73edfccca01a4d
+      internalID: -780133085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1012,6 +1298,19 @@ TextureImporter:
       BingoGameplay-bb-number-holder: 2114808137
       BingoGameplay-bb-number-holder-star: 1818554826
       BingoGameplay-bb-panel-background: 1241728846
+      CombinationHintAnimation -bb-combination-1: -391619520
+      CombinationHintAnimation -bb-combination-10: -1942185710
+      CombinationHintAnimation -bb-combination-11: -166865311
+      CombinationHintAnimation -bb-combination-12: 1608119611
+      CombinationHintAnimation -bb-combination-13: 1667594924
+      CombinationHintAnimation -bb-combination-2: 481203018
+      CombinationHintAnimation -bb-combination-3: -982108416
+      CombinationHintAnimation -bb-combination-4: -2030707066
+      CombinationHintAnimation -bb-combination-5: -844213225
+      CombinationHintAnimation -bb-combination-6: 1094471194
+      CombinationHintAnimation -bb-combination-7: -1690714513
+      CombinationHintAnimation -bb-combination-8: -2005069511
+      CombinationHintAnimation -bb-combination-9: -780133085
       ComboCounter-bb-combo-counter-1: 1192778027
       ComboCounter-bb-combo-counter-green-bar: -1362661170
       ComboCounter-bb-combo-counter-grey-bar: 2036126644

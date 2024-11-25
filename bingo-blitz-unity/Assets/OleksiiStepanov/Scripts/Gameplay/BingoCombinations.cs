@@ -61,7 +61,16 @@ namespace OleksiiStepanov.Gameplay
                 rightToLeftDiagonal[i] = i * _gridSize + (_gridSize - i - 1);
             }
             combinations.Add(rightToLeftDiagonal);
-
+            
+            // Corners
+            int[] corners = new int[4];
+            corners[0] = 0; // Top-left corner
+            corners[1] = _gridSize - 1; // Top-right corner
+            corners[2] = (_gridSize - 1) * _gridSize; // Bottom-left corner
+            corners[3] = (_gridSize * _gridSize) - 1; // Bottom-right corner
+            
+            combinations.Add(corners);
+            
             return combinations;
         }
     }
