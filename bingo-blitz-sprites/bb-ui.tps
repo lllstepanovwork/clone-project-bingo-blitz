@@ -201,6 +201,19 @@
             <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-n.png</key>
             <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-o.png</key>
             <key type="filename">UI/BingoGameplay/bb-number-holder.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-1.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-10.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-11.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-12.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-13.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-2.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-3.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-4.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-5.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-6.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-7.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-8.png</key>
+            <key type="filename">UI/CombinationHintAnimation /bb-combination-9.png</key>
             <key type="filename">UI/General/bb-back-button-icon.png</key>
             <key type="filename">UI/General/bb-bingo-field-icon.png</key>
             <key type="filename">UI/General/bb-minus-button.png</key>
@@ -220,6 +233,7 @@
                 <false/>
             </struct>
             <key type="filename">UI/BingoGameplay/bb-panel-background.png</key>
+            <key type="filename">UI/General/bb-blue-button.png</key>
             <key type="filename">UI/General/bb-green-button.png</key>
             <key type="filename">UI/General/bb-orange-button.png</key>
             <struct type="IndividualSpriteSettings">
@@ -272,6 +286,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">UI/General/bb-orange-button-2.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <true/>
+                <key>scale9Borders</key>
+                <rect>64,64,0,0</rect>
+                <key>scale9Paddings</key>
+                <rect>64,64,128,128</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">UI/General/bb-panel-header.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -300,6 +329,36 @@
                 <rect>64,0,0,128</rect>
                 <key>scale9Paddings</key>
                 <rect>32,32,64,64</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">UI/Logo/OfficialLogos/bb-logo.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>56,41,112,81</rect>
+                <key>scale9Paddings</key>
+                <rect>56,41,112,81</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">UI/Logo/OfficialLogos/playtika_logo.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>200,78,400,157</rect>
+                <key>scale9Paddings</key>
+                <rect>200,78,400,157</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>

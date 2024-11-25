@@ -33,16 +33,29 @@ namespace OleksiiStepanov.UI
         private void EnableLoadingBar()
         {
             loadingBarCanvasGroup.gameObject.SetActive(true);
-            loadingBarCanvasGroup.DOFade(1, 0.5f).onComplete = () =>
+            loadingBarCanvasGroup.DOFade(1, 0.5f).onComplete = LoadLoadingBarHalf;
+        }
+        
+        private void LoadLoadingBarHalf()
+        {
+            DOVirtual.Vector2(loadingBarRectTransform.offsetMax, loadingBarRectTransform.offsetMax / 2, 1.5f, (value) =>
             {
-                DOVirtual.Vector2(loadingBarRectTransform.offsetMax, Vector2.zero, 3f, (value) =>
-                {
-                    loadingBarRectTransform.offsetMax = value;
-                }).onComplete = () =>
-                {
-                    KillLogoAnimation();
-                    UIManager.Instance.OpenLevelPanel();
-                };
+                loadingBarRectTransform.offsetMax = value;
+            }).onComplete = () =>
+            {
+                UIManager.Instance.OpenAboutPanel(LoadLoadingBarFull);
+            };
+        }
+
+        private void LoadLoadingBarFull()
+        {
+            DOVirtual.Vector2(loadingBarRectTransform.offsetMax, Vector2.zero, 1.5f, (value) =>
+            {
+                loadingBarRectTransform.offsetMax = value;
+            }).onComplete = () =>
+            {
+                KillLogoAnimation();
+                UIManager.Instance.OpenLevelPanel();
             };
         }
 

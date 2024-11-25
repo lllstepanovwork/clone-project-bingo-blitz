@@ -1,4 +1,5 @@
 using System;
+using MyNamespace;
 using OleksiiStepanov.Utils;
 using UnityEngine;
 
@@ -6,10 +7,12 @@ namespace OleksiiStepanov.UI
 {
     public class UIManager : SingletonBehaviour<UIManager>
     {
+        [Header("Content")]
         [SerializeField] private GameplayPanel gameplayPanel;
         [SerializeField] private LevelPanel levelPanel;
         [SerializeField] private LoadingPanel loadingPanel;
         [SerializeField] private TransitionPanel transitionPanel;
+        [SerializeField] private AboutPanel aboutPanel;
         
         private readonly UIPanelOpener _uIPanelOpener = new UIPanelOpener();
         
@@ -33,7 +36,18 @@ namespace OleksiiStepanov.UI
             gameplayPanel.Init(layoutNumber);
             OpenPanelWithTransition(gameplayPanel, null, gameplayPanel.StartGame);
         }
-        
+
+        public void OpenAboutPanel(Action onContinueButtonClicked = null)
+        {
+            aboutPanel.Init(() =>
+            {
+                onContinueButtonClicked?.Invoke();
+                _uIPanelOpener.ClosePanel(aboutPanel);  
+            });
+            
+            _uIPanelOpener.OpenPanel(aboutPanel);
+        }
+
         private void OpenPanelWithTransition(UIPanel uiPanel, Action onTransitionMiddlePoint = null, Action onComplete = null)
         {
             _uIPanelOpener.OpenPanel(transitionPanel, () =>
@@ -48,7 +62,11 @@ namespace OleksiiStepanov.UI
                 {
                     _uIPanelOpener.OpenPanel(uiPanel);
                     onTransitionMiddlePoint?.Invoke();
-                }, onComplete);
+                }, () =>
+                {
+                    _uIPanelOpener.ClosePanel(transitionPanel);
+                    onComplete?.Invoke();    
+                });
             });
         }
     }

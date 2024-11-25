@@ -11,14 +11,6 @@ namespace OleksiiStepanov.Game
 
         #endregion
 
-        #region ComboTier
-
-        public const string COMBO_TIER_1 = "Wow!";
-        public const string COMBO_TIER_2 = "Great!";
-        public const string COMBO_TIER_3 = "Awesome!";
-
-        #endregion
-
         #region TextMeshProSpriteShortcuts
 
         public const string TMP_SOFT_TEMP = "<sprite name=\"temp\">";
@@ -48,6 +40,14 @@ namespace OleksiiStepanov.Game
 
         public const float BINGO_SEQUENCE_FIRST_TIME = 0f;
         public const float BINGO_SEQUENCE_REPEAT_TIME = 4f;
+
+        #endregion
+        
+        #region Links
+
+        public const string BINGO_BLITZ_LINK = "https://www.bingoblitz.com/";
+        public const string PLAYTIKA_LINK = "https://www.playtika.com/";
+        public const string OLEKSII_STEPANOV_LINK = "https://www.linkedin.com/in/lllstepanov";
 
         #endregion
     }
