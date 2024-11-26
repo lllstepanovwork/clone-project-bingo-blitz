@@ -34,7 +34,8 @@ namespace OleksiiStepanov.Gameplay
         private List<int[]> _bingoCombinations = new List<int[]>();
         
         private readonly BingoCombinations _combinations = new BingoCombinations(5);
-        private readonly List<int> _currentBingoNumbers = new List<int>();
+        
+        private List<int> _currentBingoNumbers = new List<int>();
         
         public void Init()
         {
@@ -78,31 +79,32 @@ namespace OleksiiStepanov.Gameplay
             ComboCounter.OnReward -= OnComboCounterReward;
         }
 
-        private void OnNewBingoNumberCreated(int number)
+        private void OnNewBingoNumberCreated(List<int> activeSequence)
         {
-            if (_currentBingoNumbers.Count < 7)
-            {
-                _currentBingoNumbers.Add(number);    
-            }
-            else
-            {
-                _currentBingoNumbers.RemoveAt(_currentBingoNumbers.Count - 1);
-                _currentBingoNumbers.Insert(0, number);
-            }
+            _currentBingoNumbers = activeSequence;
         }
         
         private void OnComboCounterReward()
         {
-            while (true)
-            {
-                int randomIndex = Random.Range(0, _currentBingoNumbers.Count);
+            List<int> availableElements = new List<int>();
 
-                if (!elements[randomIndex].Done)
+            for (int i = 0; i < elements.Count; i++)
+            {
+                if (!elements[i].Done)
                 {
-                    elements[randomIndex].SetAsDone();
-                    break;
+                    availableElements.Add(i);
                 }
             }
+
+            if (availableElements.Count == 0)
+            {
+                return;
+            }
+
+            int randomIndex = Random.Range(0, availableElements.Count);
+            elements[availableElements[randomIndex]].SetAsDone();
+            
+            CheckBingoCombinations();
         }
 
         public void OnBingoFieldElementButtonClick(BingoFieldElement bingoFieldElement)
@@ -134,15 +136,23 @@ namespace OleksiiStepanov.Gameplay
                         counter++;
                     }
                 }
-            
-                if (counter != bingoCombination.Length) continue;
-                
-                SetAsDone();
-                break;
+
+                if (counter == bingoCombination.Length)
+                {
+                    ShowWinCombinationButtons(bingoCombination);
+                }
             }
         }
 
-        private void SetAsDone()
+        private void ShowWinCombinationButtons(int[] bingoCombination)
+        {
+            for (int i = 0; i < bingoCombination.Length; i++)
+            {
+                elements[bingoCombination[i]].SetAsCombinationState();
+            }
+        }
+
+        public void SetAsDone()
         {
             activeState.SetActive(false);
             doneState.SetActive(true);

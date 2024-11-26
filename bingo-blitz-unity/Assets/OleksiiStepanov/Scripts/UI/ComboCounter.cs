@@ -111,10 +111,13 @@ namespace OleksiiStepanov.UI
             
             _rewardStarSequence = DOTween.Sequence();
             _rewardGradientSequence = DOTween.Sequence();
+            
+            starRectTransform.localScale = Vector3.one;
+            gradientImage.DOFade(1f, 0f);
 
             _rewardStarSequence
-                .Append(starRectTransform.DOScale(1f, 0.05f))
-                .Append(starRectTransform.DOScale(0.8f, 0.05f))
+                .Append(starRectTransform.DOScale(1f, 0.2f))
+                .Append(starRectTransform.DOScale(0.9f, 0.2f))
                 .SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
             
             _rewardGradientSequence

@@ -350,7 +350,7 @@ TextureImporter:
       name: General-bb-bingo-field-icon
       rect:
         serializedVersion: 2
-        x: 1677
+        x: 1553
         y: 1925
         width: 122
         height: 122
@@ -966,8 +966,8 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-1
       rect:
         serializedVersion: 2
-        x: 1925
-        y: 1793
+        x: 1677
+        y: 1921
         width: 122
         height: 126
       alignment: 0
@@ -988,7 +988,7 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-10
       rect:
         serializedVersion: 2
-        x: 719
+        x: 595
         y: 779
         width: 122
         height: 126
@@ -1010,8 +1010,8 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-11
       rect:
         serializedVersion: 2
-        x: 843
-        y: 777
+        x: 719
+        y: 779
         width: 122
         height: 126
       alignment: 0
@@ -1033,7 +1033,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 843
-        y: 649
+        y: 777
         width: 122
         height: 126
       alignment: 0
@@ -1054,8 +1054,8 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-13
       rect:
         serializedVersion: 2
-        x: 849
-        y: 519
+        x: 843
+        y: 649
         width: 122
         height: 126
       alignment: 0
@@ -1076,8 +1076,8 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-2
       rect:
         serializedVersion: 2
-        x: 1801
-        y: 1921
+        x: 1925
+        y: 1793
         width: 122
         height: 126
       alignment: 0
@@ -1098,8 +1098,8 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-3
       rect:
         serializedVersion: 2
-        x: 1925
-        y: 1
+        x: 1801
+        y: 1921
         width: 122
         height: 126
       alignment: 0
@@ -1121,7 +1121,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1925
-        y: 1921
+        y: 1
         width: 122
         height: 126
       alignment: 0
@@ -1142,8 +1142,8 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-5
       rect:
         serializedVersion: 2
-        x: 999
-        y: 1
+        x: 1925
+        y: 1921
         width: 122
         height: 126
       alignment: 0
@@ -1164,8 +1164,8 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-6
       rect:
         serializedVersion: 2
-        x: 814
-        y: 907
+        x: 904
+        y: 391
         width: 122
         height: 126
       alignment: 0
@@ -1186,7 +1186,7 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-7
       rect:
         serializedVersion: 2
-        x: 690
+        x: 814
         y: 907
         width: 122
         height: 126
@@ -1208,7 +1208,7 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-8
       rect:
         serializedVersion: 2
-        x: 566
+        x: 690
         y: 907
         width: 122
         height: 126
@@ -1230,8 +1230,8 @@ TextureImporter:
       name: CombinationHintAnimation -bb-combination-9
       rect:
         serializedVersion: 2
-        x: 595
-        y: 779
+        x: 566
+        y: 907
         width: 122
         height: 126
       alignment: 0
@@ -1402,6 +1402,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: BingoGameplay-bb-combination-button-holder
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63ad5ac09356405f98a51e5cf43dc5d
+      internalID: 1756213677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1427,6 +1449,7 @@ TextureImporter:
       BingoGameplay-Bingo-bb-bingo-letter-i: 1293095683
       BingoGameplay-Bingo-bb-bingo-letter-n: -1960804153
       BingoGameplay-Bingo-bb-bingo-letter-o: -346453951
+      BingoGameplay-bb-combination-button-holder: 1756213677
       BingoGameplay-bb-number-holder: 2114808137
       BingoGameplay-bb-number-holder-star: 1818554826
       BingoGameplay-bb-panel-background: 1241728846

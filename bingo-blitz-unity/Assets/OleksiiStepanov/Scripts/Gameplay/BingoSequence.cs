@@ -17,7 +17,9 @@ namespace OleksiiStepanov.Gameplay
         [SerializeField] private List<Sprite> bingoBallsSprites = new List<Sprite>();
 
         public static event Action OnSequenceFinished;
-        public static event Action<int> OnNewBingoNumberCreated;
+        public static event Action<List<int>> OnNewBingoNumberCreated;
+        
+        private readonly List<int> _activeSequence = new List<int>();
         
         private void OnEnable()
         {
@@ -72,7 +74,17 @@ namespace OleksiiStepanov.Gameplay
             
             UpdateBingoBallsVisuals();
             
-            OnNewBingoNumberCreated?.Invoke(number);
+            if (_activeSequence.Count < 7)
+            {
+                _activeSequence.Add(number);    
+            }
+            else
+            {
+                _activeSequence.RemoveAt(0);
+                _activeSequence.Add(number);
+            }
+            
+            OnNewBingoNumberCreated?.Invoke(_activeSequence);
         }
 
         private Sprite GetBingoBallSprite(int number)

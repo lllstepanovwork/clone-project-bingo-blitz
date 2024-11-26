@@ -12,6 +12,7 @@ namespace OleksiiStepanov.Gameplay
         [Header("Content")]
         [SerializeField] private GameObject activeState;
         [SerializeField] private GameObject doneState;
+        [SerializeField] private GameObject combinationState;
         [SerializeField] private TMP_Text numberText;
         
         [Header("DoneStateAnimation")]
@@ -34,6 +35,7 @@ namespace OleksiiStepanov.Gameplay
             
             activeState.SetActive(true);
             doneState.SetActive(false);
+            combinationState.SetActive(false);
         
             numberText.text = Number.ToString();
             
@@ -48,6 +50,14 @@ namespace OleksiiStepanov.Gameplay
             Done = true;
             
             AnimateDoneState();
+        }
+        
+        public void SetAsCombinationState()
+        {
+            doneState.SetActive(false);
+            combinationState.SetActive(true);
+
+            combinationState.transform.DOShakeScale(0.5f, 0.2f);
         }
 
         private void AnimateDoneState()
@@ -66,7 +76,7 @@ namespace OleksiiStepanov.Gameplay
                 .Join(starTransform.DOShakeScale(0.1f, 0.2f));
         }
 
-        public void ClickButton()
+        public void OnActiveStateButtonClick()
         {
             if (!_initialized)
             {
@@ -74,6 +84,11 @@ namespace OleksiiStepanov.Gameplay
             }
 
             _bingoField.OnBingoFieldElementButtonClick(this);
+        }
+        
+        public void OnCombinationStateButtonClick()
+        {
+            _bingoField.SetAsDone();
         }
     }    
 }

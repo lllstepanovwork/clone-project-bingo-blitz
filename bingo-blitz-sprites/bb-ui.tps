@@ -286,6 +286,40 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">UI/General/bb-about-panel.png</key>
+            <key type="filename">UI/Logo/bb-light-fx.png</key>
+            <key type="filename">UI/Logo/bb-logo-back.png</key>
+            <key type="filename">UI/Logo/bb-logo-text.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>128,128,256,256</rect>
+                <key>scale9Paddings</key>
+                <rect>128,128,256,256</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">UI/General/bb-close-button-icon.png</key>
+            <key type="filename">UI/General/bb-info-button-icon.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>16,16,32,32</rect>
+                <key>scale9Paddings</key>
+                <rect>16,16,32,32</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">UI/General/bb-orange-button-2.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -347,24 +381,6 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI/Logo/OfficialLogos/playtika_logo.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>200,78,400,157</rect>
-                <key>scale9Paddings</key>
-                <rect>200,78,400,157</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">UI/Logo/bb-light-fx.png</key>
-            <key type="filename">UI/Logo/bb-logo-back.png</key>
-            <key type="filename">UI/Logo/bb-logo-text.png</key>
             <key type="filename">UI/bb-cloud.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -374,9 +390,9 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>128,128,256,256</rect>
+                <rect>128,70,256,140</rect>
                 <key>scale9Paddings</key>
-                <rect>128,128,256,256</rect>
+                <rect>128,70,256,140</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
