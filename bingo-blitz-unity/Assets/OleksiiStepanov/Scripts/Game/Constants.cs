@@ -11,12 +11,6 @@ namespace OleksiiStepanov.Game
 
         #endregion
 
-        #region TextMeshProSpriteShortcuts
-
-        public const string TMP_SOFT_TEMP = "<sprite name=\"temp\">";
-
-        #endregion
-
         #region ConsoleColors
 
         public const string CONSOLE_MESSAGE_COLOR_PINK = "<color=#EE77AE>";

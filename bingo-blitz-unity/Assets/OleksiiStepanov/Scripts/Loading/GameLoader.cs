@@ -31,7 +31,6 @@ namespace OleksiiStepanov.Loading
             LoadingSteps = new List<LoadingStepBase>
             {
                 new LoadingStep_AppInit(),
-                new LoadingStep_UserData(),
                 new LoadingStep_UIInit(),
                 new LoadingStep_Complete()
             };
