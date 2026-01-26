@@ -5,6 +5,7 @@ namespace BingoBlitzClone.UI
 {
     public enum UIViewAnimationType
     {
+        Fade,
         FromBottom,
         None
     }
@@ -16,6 +17,8 @@ namespace BingoBlitzClone.UI
         public Transform contentTransform;
         public UIViewAnimationType animationType;
 
-        public abstract void OnUIPanelOpened();
+        public virtual void OnUIPanelOpened()
+        {
+        }
     }
 }

@@ -70,13 +70,13 @@ namespace BingoBlitzClone.Gameplay
         private void OnEnable()
         {
             BingoSequence.OnNewBingoNumberCreated += OnNewBingoNumberCreated; 
-            ComboCounter.OnReward += OnComboCounterReward;
+            GameplayPanelComboCounter.OnReward += OnComboCounterReward;
         }
 
         private void OnDisable()
         {
             BingoSequence.OnNewBingoNumberCreated -= OnNewBingoNumberCreated;
-            ComboCounter.OnReward -= OnComboCounterReward;
+            GameplayPanelComboCounter.OnReward -= OnComboCounterReward;
         }
 
         private void OnNewBingoNumberCreated(List<int> activeSequence)

@@ -32,11 +32,6 @@ namespace BingoBlitzClone.UI
                 {
                     onComplete?.Invoke();       
                 });
-    }
-
-        public override void OnUIPanelOpened()
-        {
-            
         }
     }
 }

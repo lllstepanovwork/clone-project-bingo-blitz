@@ -5,13 +5,14 @@ using BingoBlitzClone.Gameplay;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 namespace BingoBlitzClone.UI
 {
     public class GameplayPanel : UIPanel
     {
         [Header("Content")]
-        [SerializeField] private ComboCounter comboCounter;
+        [SerializeField] private GameplayPanelComboCounter gameplayPanelComboCounter;
         [SerializeField] private List<GameplayPanelLayout> layouts;
         [SerializeField] private Transform backButtonTransform;
         [SerializeField] private GameObject combinationAnimation;
@@ -21,7 +22,14 @@ namespace BingoBlitzClone.UI
         [SerializeField] private RectTransform messageTextRectTransform;
 
         private GameplayPanelLayout _currentLayout;
-        
+        private UIManager _uiManager;
+
+        [Inject]
+        public void Construct(UIManager uiManager)
+        {
+            _uiManager = uiManager;
+        }
+
         public void Init(int numberOfFields)
         {
             HideAllLayouts();
@@ -30,7 +38,7 @@ namespace BingoBlitzClone.UI
             _currentLayout.gameObject.SetActive(true);
             _currentLayout.Init();
             
-            comboCounter.Init();
+            gameplayPanelComboCounter.Init();
         }
 
         public void StartGame()
@@ -44,13 +52,13 @@ namespace BingoBlitzClone.UI
         
         public override void OnUIPanelOpened()
         {
-            comboCounter.gameObject.SetActive(true);
+            gameplayPanelComboCounter.gameObject.SetActive(true);
             combinationAnimation.SetActive(true);
             
             backButtonTransform.gameObject.SetActive(true);
 
             backButtonTransform.DOShakeScale(0.2f, 0.5f);
-            comboCounter.transform.DOShakeScale(0.2f, 0.5f);
+            gameplayPanelComboCounter.transform.DOShakeScale(0.2f, 0.5f);
             combinationAnimation.transform.DOShakeScale(0.2f, 0.5f);
             
             _currentLayout.PlayShakeAnimation();
@@ -61,7 +69,7 @@ namespace BingoBlitzClone.UI
             backButtonTransform.gameObject.SetActive(false);
             
             _currentLayout.StopGame();
-            UIManager.Instance.OpenLevelPanel();
+            _uiManager.OpenLevelPanel();
         }
 
         private void AnimateMessageText(Action onComplete = null)
@@ -121,7 +129,7 @@ namespace BingoBlitzClone.UI
 
         private void OnGameOver()
         {
-            comboCounter.gameObject.SetActive(false);
+            gameplayPanelComboCounter.gameObject.SetActive(false);
             
             combinationAnimation.SetActive(false);
             

@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using Zenject;
 
 namespace BingoBlitzClone.UI
 {
@@ -17,6 +18,14 @@ namespace BingoBlitzClone.UI
         private Tweener _logoTweener;
         private Tweener _planetTweener;
         private Tweener _lightTweener;
+        
+        private UIManager _uiManager;
+
+        [Inject]
+        public void Construct(UIManager uiManager)
+        {
+            _uiManager = uiManager;
+        }
         
         public override void OnUIPanelOpened()
         {
@@ -43,7 +52,7 @@ namespace BingoBlitzClone.UI
                 loadingBarRectTransform.offsetMax = value;
             }).onComplete = () =>
             {
-                UIManager.Instance.OpenAboutPanel(LoadLoadingBarFull);
+                _uiManager.OpenAboutPanel(LoadLoadingBarFull);
             };
         }
 
@@ -55,7 +64,7 @@ namespace BingoBlitzClone.UI
             }).onComplete = () =>
             {
                 KillLogoAnimation();
-                UIManager.Instance.OpenLevelPanel();
+                _uiManager.OpenLevelPanel();
             };
         }
 

@@ -1,10 +1,9 @@
 using System;
 using DG.Tweening;
 using BingoBlitzClone.Game;
-using BingoBlitzClone.UI;
 using UnityEngine;
 
-namespace MyNamespace
+namespace BingoBlitzClone.UI
 {
     public class AboutPanel : UIPanel
     {

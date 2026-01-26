@@ -7,7 +7,7 @@ using DG.Tweening;
 
 namespace BingoBlitzClone.UI
 {
-    public class ComboCounter : MonoBehaviour
+    public class GameplayPanelComboCounter : MonoBehaviour
     {
         [Header("Counter State")] 
         [SerializeField] private CanvasGroup counterStateCanvasGroup;

@@ -2,6 +2,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace BingoBlitzClone.UI
 {
@@ -13,23 +14,31 @@ namespace BingoBlitzClone.UI
         [SerializeField] private TMP_Text layoutNumberText;
         
         private int _layoutNumber = 1;
-        private const int MIN_LAYOUT_NUMBER = 1;
-        private const int MAX_LAYOUT_NUMBER = 4;
+        private const int MinLayoutNumber = 1;
+        private const int MaxLayoutNumber = 4;
 
         private int LayoutNumber
         {
             get => _layoutNumber;
             set
             {
-                _layoutNumber = Mathf.Clamp(value, MIN_LAYOUT_NUMBER, MAX_LAYOUT_NUMBER);
+                _layoutNumber = Mathf.Clamp(value, MinLayoutNumber, MaxLayoutNumber);
                 UpdateLayoutText();
                 UpdateButtonStates();
             }
         }
+        
+        private UIManager _uiManager;
+
+        [Inject]
+        public void Construct(UIManager uiManager)
+        {
+            _uiManager = uiManager;
+        }
 
         public void Init()
         {
-            LayoutNumber = MIN_LAYOUT_NUMBER;
+            LayoutNumber = MinLayoutNumber;
             UpdateLayoutText();
         }
         
@@ -60,13 +69,13 @@ namespace BingoBlitzClone.UI
 
         private void UpdateButtonStates()
         {
-            plusButton.interactable = LayoutNumber < MAX_LAYOUT_NUMBER;
-            minusButton.interactable = LayoutNumber > MIN_LAYOUT_NUMBER;
+            plusButton.interactable = LayoutNumber < MaxLayoutNumber;
+            minusButton.interactable = LayoutNumber > MinLayoutNumber;
         }
 
         public void OnPlayButtonClicked()
         {
-            UIManager.Instance.OpenGameplayPanel(LayoutNumber);
+            _uiManager.OpenGameplayPanel(LayoutNumber);
         }
     }    
 }

@@ -17,6 +17,7 @@ namespace BingoBlitzClone.Loading
 
         private List<LoadingStepBase> _loadingSteps;
         private LoadingStepBase CurrentLoadingStep { get; set; }
+        
         private int _currentLoadingStepIndex = 0;
 
         [Inject]

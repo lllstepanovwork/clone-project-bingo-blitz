@@ -1,11 +1,9 @@
 using System;
-using BingoBlitzClone.Utils;
-using MyNamespace;
 using UnityEngine;
 
 namespace BingoBlitzClone.UI
 {
-    public class UIManager : SingletonBehaviour<UIManager>
+    public class UIManager : MonoBehaviour
     {
         [Header("Content")]
         [SerializeField] private GameplayPanel gameplayPanel;
@@ -34,6 +32,7 @@ namespace BingoBlitzClone.UI
         public void OpenGameplayPanel(int layoutNumber)
         {
             gameplayPanel.Init(layoutNumber);
+            
             OpenPanelWithTransition(gameplayPanel, null, gameplayPanel.StartGame);
         }
 
