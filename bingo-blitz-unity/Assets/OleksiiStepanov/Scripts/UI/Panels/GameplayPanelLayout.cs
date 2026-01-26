@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using OleksiiStepanov.Gameplay;
+using BingoBlitzClone.Gameplay;
 using UnityEngine;
 
-namespace OleksiiStepanov.UI
+namespace BingoBlitzClone.UI
 {
     public class GameplayPanelLayout : MonoBehaviour
     {

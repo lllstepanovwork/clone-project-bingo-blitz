@@ -1,10 +1,10 @@
+using BingoBlitzClone.Game;
 using DG.Tweening;
-using OleksiiStepanov.Game;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace OleksiiStepanov.Gameplay
+namespace BingoBlitzClone.Gameplay
 {
     public class BingoBall : MonoBehaviour
     {

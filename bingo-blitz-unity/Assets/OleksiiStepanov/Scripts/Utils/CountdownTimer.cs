@@ -2,7 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace OleksiiStepanov.Utils
+namespace BingoBlitzClone.Utils
 {
     public class CountdownTimer
     {

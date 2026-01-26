@@ -1,9 +1,9 @@
 using System;
+using BingoBlitzClone.Utils;
 using MyNamespace;
-using OleksiiStepanov.Utils;
 using UnityEngine;
 
-namespace OleksiiStepanov.UI
+namespace BingoBlitzClone.UI
 {
     public class UIManager : SingletonBehaviour<UIManager>
     {

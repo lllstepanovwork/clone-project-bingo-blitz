@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace OleksiiStepanov.Utils
+namespace BingoBlitzClone.Utils
 {
 	/// <summary>
 	/// MonoBehaviour Singleton Implementation

@@ -1,7 +1,7 @@
 using System;
 using DG.Tweening;
-using OleksiiStepanov.Game;
-using OleksiiStepanov.UI;
+using BingoBlitzClone.Game;
+using BingoBlitzClone.UI;
 using UnityEngine;
 
 namespace MyNamespace

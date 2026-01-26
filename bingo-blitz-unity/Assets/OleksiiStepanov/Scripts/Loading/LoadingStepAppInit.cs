@@ -1,8 +1,8 @@
-﻿using OleksiiStepanov.Game;
+﻿using BingoBlitzClone.Game;
 
-namespace OleksiiStepanov.Loading
+namespace BingoBlitzClone.Loading
 {
-    public class LoadingStep_AppInit : LoadingStepBase
+    public class LoadingStepAppInit : LoadingStepBase
     {
         public override void Enter()
         {

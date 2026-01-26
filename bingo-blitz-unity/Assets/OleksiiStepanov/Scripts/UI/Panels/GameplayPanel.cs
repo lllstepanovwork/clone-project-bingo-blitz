@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
+using BingoBlitzClone.Game;
+using BingoBlitzClone.Gameplay;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
-using OleksiiStepanov.Game;
-using OleksiiStepanov.Gameplay;
 
-namespace OleksiiStepanov.UI
+namespace BingoBlitzClone.UI
 {
     public class GameplayPanel : UIPanel
     {

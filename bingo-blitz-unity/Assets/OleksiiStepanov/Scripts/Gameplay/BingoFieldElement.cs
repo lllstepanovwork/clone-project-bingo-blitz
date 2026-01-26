@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace OleksiiStepanov.Gameplay
+namespace BingoBlitzClone.Gameplay
 {
     public class BingoFieldElement : MonoBehaviour
     {

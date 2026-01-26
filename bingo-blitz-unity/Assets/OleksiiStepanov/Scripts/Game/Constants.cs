@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace OleksiiStepanov.Game
+namespace BingoBlitzClone.Game
 {
     public class Constants : MonoBehaviour
     {

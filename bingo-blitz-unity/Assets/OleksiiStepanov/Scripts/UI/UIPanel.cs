@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace OleksiiStepanov.UI
+namespace BingoBlitzClone.UI
 {
     public enum UIViewAnimationType
     {

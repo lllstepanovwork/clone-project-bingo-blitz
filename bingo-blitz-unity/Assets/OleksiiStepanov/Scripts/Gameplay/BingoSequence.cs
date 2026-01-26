@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using OleksiiStepanov.Game;
-using OleksiiStepanov.Utils;
+using BingoBlitzClone.Game;
+using BingoBlitzClone.Utils;
 using UnityEngine;
 
-namespace OleksiiStepanov.Gameplay
+namespace BingoBlitzClone.Gameplay
 {
     public class BingoSequence : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OleksiiStepanov.Gameplay
+namespace BingoBlitzClone.Gameplay
 {
     public class BingoCombinations
     {

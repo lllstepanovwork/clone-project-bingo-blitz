@@ -1,11 +1,11 @@
-using OleksiiStepanov.Gameplay;
 using UnityEngine.UI;
 using UnityEngine;
 using System;
+using BingoBlitzClone.Game;
+using BingoBlitzClone.Gameplay;
 using DG.Tweening;
-using OleksiiStepanov.Game;
 
-namespace OleksiiStepanov.UI
+namespace BingoBlitzClone.UI
 {
     public class ComboCounter : MonoBehaviour
     {

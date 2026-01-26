@@ -1,4 +1,4 @@
-﻿namespace OleksiiStepanov.Utils
+﻿namespace BingoBlitzClone.Utils
 {
     /// <summary>
     /// Singleton Implementation

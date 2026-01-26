@@ -1,8 +1,8 @@
 ﻿using System;
-using OleksiiStepanov.Game;
+using BingoBlitzClone.Game;
 using UnityEngine;
 
-namespace OleksiiStepanov.Loading
+namespace BingoBlitzClone.Loading
 {
 	/// <summary>
 	/// Loading step base class - use this to create new steps

@@ -1,68 +1,66 @@
 ﻿using System;
 using System.Collections.Generic;
-using OleksiiStepanov.Game;
-using OleksiiStepanov.Utils;
+using BingoBlitzClone.Game;
 using UnityEngine;
+using Zenject;
 
-namespace OleksiiStepanov.Loading
+namespace BingoBlitzClone.Loading
 {
-    public class GameLoader : SingletonBehaviour<GameLoader>
+    public class GameLoader : IInitializable
     {
-        [NonSerialized] public List<LoadingStepBase> LoadingSteps = null;
-
-        public LoadingStepBase CurrentLoadingStep { get; private set; }
+        public bool LoadingComplete = false;
 
         public event Action<LoadingStep> LoadingStepCompleted = null;
-
         public event Action LoadingCompleted = null;
 
-        [HideInInspector] public bool LoadingComplete = false;
+        private readonly LoadingStepFactory _factory;
 
-        private int currentLoadingStepIndex = 0;
+        private List<LoadingStepBase> _loadingSteps;
+        private LoadingStepBase CurrentLoadingStep { get; set; }
+        private int _currentLoadingStepIndex = 0;
 
-        private void Start()
+        [Inject]
+        public GameLoader(LoadingStepFactory factory)
         {
-            Init();
+            _factory = factory;
         }
 
-        public void Init()
+        public void Initialize()
+        {
+            StartLoading();
+        }
+
+        private void StartLoading()
         {
             LoadingComplete = false;
-            LoadingSteps = new List<LoadingStepBase>
+
+            _loadingSteps = new List<LoadingStepBase>
             {
-                new LoadingStep_AppInit(),
-                new LoadingStep_UIInit(),
-                new LoadingStep_Complete()
+                _factory.Create<LoadingStepAppInit>(),
+                _factory.Create<LoadingStepUIInit>(),
+                _factory.Create<LoadingStepComplete>()
             };
 
-            foreach (LoadingStepBase step in LoadingSteps)
+            foreach (var step in _loadingSteps)
             {
                 step.Exited += GoToNextStep;
             }
 
-            if (LoadingSteps != null && LoadingSteps.Count > 0)
-            {
-                SetCurrentLoadingStep(LoadingSteps[0]);
-            }
-            else
-            {
-                Debug.LogError("Loading steps list is null or empty");
-                Application.Quit();
-            }
+            SetCurrentLoadingStep(_loadingSteps[0]);
         }
 
-        public void GoToNextStep()
+        private void GoToNextStep()
         {
             if (CurrentLoadingStep != null)
             {
                 LoadingStepCompleted?.Invoke(CurrentLoadingStep.GetStepType());
             }
 
-            currentLoadingStepIndex++;
+            _currentLoadingStepIndex++;
 
-            if (currentLoadingStepIndex < LoadingSteps.Count)
+            if (_currentLoadingStepIndex < _loadingSteps.Count)
             {
-                SetCurrentLoadingStep(LoadingSteps[currentLoadingStepIndex]);
+                SetCurrentLoadingStep(_loadingSteps[_currentLoadingStepIndex]);
             }
             else
             {
@@ -73,9 +71,8 @@ namespace OleksiiStepanov.Loading
 
         private void SetCurrentLoadingStep(LoadingStepBase step)
         {
-            Debug.Log($"{Constants.CONSOLE_MESSAGE_COLOR_BLUE}Entering: {step} step!{Constants.CONSOLE_MESSAGE_COLOR_END}");
+            Debug.Log($"Entering: {step} step!");
             CurrentLoadingStep = step;
-
             CurrentLoadingStep.Enter();
         }
     }

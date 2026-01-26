@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
+using BingoBlitzClone.UI;
+using BingoBlitzClone.Utils;
 using DG.Tweening;
-using OleksiiStepanov.UI;
-using OleksiiStepanov.Utils;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-namespace OleksiiStepanov.Gameplay
+namespace BingoBlitzClone.Gameplay
 {
     public class BingoField : MonoBehaviour
     {

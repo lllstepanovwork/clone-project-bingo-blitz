@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace OleksiiStepanov.Utils
+namespace BingoBlitzClone.Utils
 {
     public class ObjectPool : MonoBehaviour
     {

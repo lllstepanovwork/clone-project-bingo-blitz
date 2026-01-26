@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Random = System.Random;
 
-namespace OleksiiStepanov.Utils
+namespace BingoBlitzClone.Utils
 {
     public static class ListTools 
     {

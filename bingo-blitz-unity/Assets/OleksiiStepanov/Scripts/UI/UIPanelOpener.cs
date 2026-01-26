@@ -1,6 +1,6 @@
 using System;
 
-namespace OleksiiStepanov.UI
+namespace BingoBlitzClone.UI
 {
     public class UIPanelOpener
     {

@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace OleksiiStepanov.UI
+namespace BingoBlitzClone.UI
 {
     public class LoadingPanel : UIPanel
     {

@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using DG.Tweening;
 
-namespace OleksiiStepanov.UI
+namespace BingoBlitzClone.UI
 {
     public class TransitionPanel : UIPanel
     {

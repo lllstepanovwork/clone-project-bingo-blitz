@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace OleksiiStepanov.Utils
+namespace BingoBlitzClone.Utils
 {
     public class ReadOnlyAttribute : PropertyAttribute
     {

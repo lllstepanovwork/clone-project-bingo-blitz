@@ -2,7 +2,7 @@ using System;
 using DG.Tweening;
 using UnityEngine;
 
-namespace OleksiiStepanov.UI
+namespace BingoBlitzClone.UI
 {
     public class FromBottomUIViewAnimation : IUIViewAnimation
     {
