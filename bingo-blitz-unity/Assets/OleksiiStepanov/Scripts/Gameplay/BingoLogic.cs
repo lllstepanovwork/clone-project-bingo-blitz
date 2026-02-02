@@ -46,6 +46,5 @@ namespace BingoBlitzClone.Gameplay
                 _combinations.Add(combination);
             }
         }
-        
     }
 }

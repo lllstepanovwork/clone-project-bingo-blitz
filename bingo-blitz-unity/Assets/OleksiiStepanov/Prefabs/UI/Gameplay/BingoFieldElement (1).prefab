@@ -179,6 +179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4470709702163186092}
+  - component: {fileID: 7199980703235789622}
   m_Layer: 5
   m_Name: CombinationState
   m_TagString: Untagged
@@ -206,6 +207,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7199980703235789622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4326528128671808908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ab0ce2de6d84669936ff78b398d3bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4441149542819933068
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,13 +303,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7047448501193991476}
+  - component: {fileID: 5752057004871703979}
   m_Layer: 5
   m_Name: ActiveState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7047448501193991476
 RectTransform:
   m_ObjectHideFlags: 0
@@ -318,6 +332,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5752057004871703979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177155689821516609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44bd9a0b8734898951f1dae7a1fa0f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberText: {fileID: 7677685576638737577}
 --- !u!1 &5386228079086549908
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,6 +622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6743008890983170467}
+  - component: {fileID: 1092818932054123263}
   m_Layer: 5
   m_Name: DoneState
   m_TagString: Untagged
@@ -623,6 +651,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1092818932054123263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7096195861065224356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf4c683fa4c4be789125dbb26f82bd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starTransform: {fileID: 8880236028929637891}
+  doneStateBackgroundImage: {fileID: 4122657003072263491}
 --- !u!1 &7741560804193499196
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,12 +714,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfa334e900ea4bbea06a331ee41d44e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeState: {fileID: 5177155689821516609}
-  doneState: {fileID: 7096195861065224356}
-  combinationState: {fileID: 4326528128671808908}
-  numberText: {fileID: 7677685576638737577}
-  starTransform: {fileID: 8880236028929637891}
-  doneStateBackgroundImage: {fileID: 4122657003072263491}
+  activeState: {fileID: 5752057004871703979}
+  doneState: {fileID: 1092818932054123263}
+  combinationState: {fileID: 7199980703235789622}
 --- !u!1 &8399424038584956783
 GameObject:
   m_ObjectHideFlags: 0
