@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e6ef9a33cf45d996e58c8d675e8ed2, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  GameRules:
+    BingoBallAppearTime: 5
+    MaxCombo: 3
+  CombinationInfo:
+    Combinations:
+    - cells: 01000000000001000000000001000000000001000000000001
+    - cells: 00000000010000000100000001000000010000000100000000
+    - cells: 01000000010000000000000000000000000000000100000001
+    - cells: 01010101010000000000000000000000000000000000000000

@@ -2477,7 +2477,7 @@ GameObject:
   - component: {fileID: 239586787}
   - component: {fileID: 239586788}
   m_Layer: 5
-  m_Name: BingoSequence
+  m_Name: BingoSequenceViewer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2523,14 +2523,13 @@ MonoBehaviour:
   - {fileID: 1721519610}
   - {fileID: 1564272481}
   - {fileID: 1653179496}
-  layout: {fileID: 393697549}
-  bingoSequence: 
   bingoBallsSprites:
   - {fileID: 38531977, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -883191211, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -843984682, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -1947529874, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: 360182540, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
+  layout: {fileID: 393697549}
 --- !u!1001 &257165426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2569,7 +2568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.87195
+      value: 141.94287
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2605,7 +2604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.935974
+      value: -70.971436
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2655,7 +2654,7 @@ GameObject:
   - component: {fileID: 263265117}
   - component: {fileID: 263265119}
   m_Layer: 5
-  m_Name: BingoSequence
+  m_Name: BingoSequenceViewer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2701,14 +2700,13 @@ MonoBehaviour:
   - {fileID: 554488728}
   - {fileID: 330313440}
   - {fileID: 1499874443}
-  layout: {fileID: 150099093}
-  bingoSequence: 
   bingoBallsSprites:
   - {fileID: 38531977, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -883191211, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -843984682, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -1947529874, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: 360182540, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
+  layout: {fileID: 150099093}
 --- !u!1001 &280127002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3532,7 +3530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.87195
+      value: 141.94287
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3568,7 +3566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.935974
+      value: -70.971436
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3795,7 +3793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7061a9b8fb4164f30a3768e7c4ac8d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bingoSequence: {fileID: 239586788}
+  bingoSequenceViewer: {fileID: 239586788}
   bingoFields:
   - {fileID: 1905726270}
   - {fileID: 1213098684}
@@ -4196,7 +4194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7061a9b8fb4164f30a3768e7c4ac8d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bingoSequence: {fileID: 1445689245}
+  bingoSequenceViewer: {fileID: 1445689245}
   bingoFields:
   - {fileID: 280127004}
   - {fileID: 1801047064}
@@ -4776,7 +4774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.87195
+      value: 141.94287
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4812,7 +4810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.935974
+      value: -70.971436
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7038,7 +7036,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObjectInstallers: []
+  _scriptableObjectInstallers:
+  - {fileID: 11400000, guid: 2cc1c9fac0b584666992a06ff5cab520, type: 2}
   _monoInstallers:
   - {fileID: 882318480}
   - {fileID: 882318479}
@@ -10661,7 +10660,7 @@ GameObject:
   - component: {fileID: 1310104125}
   - component: {fileID: 1310104126}
   m_Layer: 5
-  m_Name: BingoSequence
+  m_Name: BingoSequenceViewer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10707,14 +10706,13 @@ MonoBehaviour:
   - {fileID: 148987407}
   - {fileID: 1903866667}
   - {fileID: 135300394}
-  layout: {fileID: 1000568611}
-  bingoSequence: 
   bingoBallsSprites:
   - {fileID: 38531977, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -883191211, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -843984682, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -1947529874, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: 360182540, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
+  layout: {fileID: 1000568611}
 --- !u!1 &1315864188
 GameObject:
   m_ObjectHideFlags: 0
@@ -10725,6 +10723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315864189}
   - component: {fileID: 1315864190}
+  - component: {fileID: 1315864191}
   m_Layer: 5
   m_Name: CooldownState
   m_TagString: Untagged
@@ -10765,6 +10764,21 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &1315864191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315864188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 682c5aa98acd412fb1587b355b2dd8fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1315864190}
+  barImage: {fileID: 1671075394}
+  overlayImage: {fileID: 1034775091}
 --- !u!1 &1327264784
 GameObject:
   m_ObjectHideFlags: 0
@@ -10775,6 +10789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1327264785}
   - component: {fileID: 1327264786}
+  - component: {fileID: 1327264788}
   - component: {fileID: 1327264787}
   m_Layer: 5
   m_Name: GameplayPanel
@@ -10818,7 +10833,8 @@ MonoBehaviour:
   canvasGroup: {fileID: 1327264787}
   contentTransform: {fileID: 1609573477}
   animationType: 0
-  gameplayPanelComboCounter: {fileID: 1354466415}
+  messageText: {fileID: 1327264788}
+  comboCounter: {fileID: 1354466415}
   layouts:
   - {fileID: 1458518812}
   - {fileID: 461336185}
@@ -10826,8 +10842,6 @@ MonoBehaviour:
   - {fileID: 1461844269}
   backButtonTransform: {fileID: 1896774818}
   combinationAnimation: {fileID: 1758645863}
-  messageText: {fileID: 342865173}
-  messageTextRectTransform: {fileID: 342865172}
 --- !u!225 &1327264787
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10840,6 +10854,20 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1327264788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327264784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc29b9e146ab437db7b1984fea4ac69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageText: {fileID: 342865173}
+  messageTextRectTransform: {fileID: 342865172}
 --- !u!1 &1350019881
 GameObject:
   m_ObjectHideFlags: 0
@@ -10973,16 +11001,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8434b88c7239450db3033a453aa098d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterStateCanvasGroup: {fileID: 1929821118}
-  counterBarImage: {fileID: 888717935}
-  counterOverlayImage: {fileID: 507623842}
-  rewardStateCanvasGroup: {fileID: 2033057947}
-  starRectTransform: {fileID: 1871562904}
-  gradientImage: {fileID: 1228669738}
-  circleFXImage: {fileID: 1363652491}
-  cooldownStateCanvasGroup: {fileID: 1315864190}
-  cooldownBarImage: {fileID: 797948474}
-  cooldownOverlayImage: {fileID: 1034775091}
+  countState: {fileID: 1929821119}
+  rewardState: {fileID: 2033057948}
+  cooldownState: {fileID: 1315864191}
 --- !u!1 &1363652489
 GameObject:
   m_ObjectHideFlags: 0
@@ -11431,7 +11452,7 @@ GameObject:
   - component: {fileID: 1445689244}
   - component: {fileID: 1445689245}
   m_Layer: 5
-  m_Name: BingoSequence
+  m_Name: BingoSequenceViewer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11477,14 +11498,13 @@ MonoBehaviour:
   - {fileID: 1937860812}
   - {fileID: 1444755301}
   - {fileID: 1735786041}
-  layout: {fileID: 2115032141}
-  bingoSequence: 
   bingoBallsSprites:
   - {fileID: 38531977, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -883191211, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -843984682, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: -1947529874, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
   - {fileID: 360182540, guid: 5f781265fe14f4106b07f0247cc044b4, type: 3}
+  layout: {fileID: 2115032141}
 --- !u!1 &1458518810
 GameObject:
   m_ObjectHideFlags: 0
@@ -11535,7 +11555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7061a9b8fb4164f30a3768e7c4ac8d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bingoSequence: {fileID: 263265119}
+  bingoSequenceViewer: {fileID: 263265119}
   bingoFields:
   - {fileID: 1900334073}
 --- !u!1 &1461844267
@@ -11591,7 +11611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7061a9b8fb4164f30a3768e7c4ac8d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bingoSequence: {fileID: 1310104126}
+  bingoSequenceViewer: {fileID: 1310104126}
   bingoFields:
   - {fileID: 101215488}
   - {fileID: 191775132}
@@ -11635,7 +11655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.87195
+      value: 141.94287
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11671,7 +11691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.935974
+      value: -70.971436
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13508,7 +13528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.87195
+      value: 141.94287
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13544,7 +13564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.935974
+      value: -70.971436
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17069,8 +17089,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1929821117}
   - component: {fileID: 1929821118}
+  - component: {fileID: 1929821119}
   m_Layer: 5
-  m_Name: CounterState
+  m_Name: CountState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17109,6 +17130,21 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &1929821119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929821116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20f26c6b3ce426cb392a4e6f02182f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1929821118}
+  barImage: {fileID: 888717935}
+  overlayImage: {fileID: 507623842}
 --- !u!1 &1934628090
 GameObject:
   m_ObjectHideFlags: 0
@@ -17339,7 +17375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.87195
+      value: 141.94287
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17375,7 +17411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.935974
+      value: -70.971436
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17668,6 +17704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2033057946}
   - component: {fileID: 2033057947}
+  - component: {fileID: 2033057948}
   m_Layer: 5
   m_Name: RewardState
   m_TagString: Untagged
@@ -17710,6 +17747,22 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &2033057948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033057945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ee4df7ccd54bd3920ea6579f2eb456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 2033057947}
+  starRectTransform: {fileID: 1871562904}
+  gradientImage: {fileID: 1228669738}
+  circleFXImage: {fileID: 1363652491}
 --- !u!1 &2058292081
 GameObject:
   m_ObjectHideFlags: 0
@@ -18268,7 +18321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.87195
+      value: 141.94287
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18304,7 +18357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.935974
+      value: -70.971436
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

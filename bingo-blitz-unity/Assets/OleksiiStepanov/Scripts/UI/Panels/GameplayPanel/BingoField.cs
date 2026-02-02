@@ -5,6 +5,7 @@ using BingoBlitzClone.Utils;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 using Random = UnityEngine.Random;
 
 namespace BingoBlitzClone.Gameplay
@@ -31,16 +32,20 @@ namespace BingoBlitzClone.Gameplay
         public static event Action OnMatch;
         public static event Action OnBingoFieldCompleted;
         
-        private List<int[]> _bingoCombinations = new List<int[]>();
-        
-        private readonly BingoCombinations _combinations = new BingoCombinations(5);
-        
-        private List<int> _currentBingoNumbers = new List<int>();
-        
+        private BingoSequence _bingoSequence;
+        private BingoCombinations _combinations;
+
+        private int _fieldNumber;
+
+        [Inject]
+        public void Construct(BingoSequence bingoSequence, BingoCombinations combinations)
+        {
+            _bingoSequence = bingoSequence;
+            _combinations = combinations;
+        }
+
         public void Init()
         {
-            _bingoCombinations = _combinations.GetBingoCombinations();
-            
             activeState.SetActive(true);
             doneState.SetActive(false);
 
@@ -69,19 +74,12 @@ namespace BingoBlitzClone.Gameplay
 
         private void OnEnable()
         {
-            BingoSequence.OnNewBingoNumberCreated += OnNewBingoNumberCreated; 
-            GameplayPanelComboCounter.OnReward += OnComboCounterReward;
+            ComboCounter.OnReward += OnComboCounterReward;
         }
 
         private void OnDisable()
         {
-            BingoSequence.OnNewBingoNumberCreated -= OnNewBingoNumberCreated;
-            GameplayPanelComboCounter.OnReward -= OnComboCounterReward;
-        }
-
-        private void OnNewBingoNumberCreated(List<int> activeSequence)
-        {
-            _currentBingoNumbers = activeSequence;
+            ComboCounter.OnReward -= OnComboCounterReward;
         }
         
         private void OnComboCounterReward()
@@ -109,23 +107,19 @@ namespace BingoBlitzClone.Gameplay
 
         public void OnBingoFieldElementButtonClick(BingoFieldElement bingoFieldElement)
         {
-            foreach (var bingoNumber in _currentBingoNumbers)
-            {
-                if (bingoFieldElement.Number != bingoNumber) continue;
-                
-                bingoFieldElement.SetAsDone();
-                
-                OnMatch?.Invoke();
-                
-                break;
-            }
+            if (!_bingoSequence.IsNumberInActiveSequence(bingoFieldElement.Number))
+                return;
+
+            bingoFieldElement.SetAsDone();
+            
+            OnMatch?.Invoke();
             
             CheckBingoCombinations();
         }
 
         private void CheckBingoCombinations()
         {   
-            foreach (var bingoCombination in _bingoCombinations)
+            foreach (var bingoCombination in _combinations.Combinations)
             {
                 int counter = 0;
                 

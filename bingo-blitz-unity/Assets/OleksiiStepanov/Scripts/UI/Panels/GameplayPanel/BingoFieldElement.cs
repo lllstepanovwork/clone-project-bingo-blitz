@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -21,7 +22,6 @@ namespace BingoBlitzClone.Gameplay
         public int Number { get; private set; }
         
         private bool _initialized = false;
-        
         private BingoField _bingoField;
         
         public void Init(BingoField bingoField, int bingoNumber)
@@ -88,6 +88,6 @@ namespace BingoBlitzClone.Gameplay
         {
             _bingoField.SetAsDone();
         }
-    }    
+    }
 }
 

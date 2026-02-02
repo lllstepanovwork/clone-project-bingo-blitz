@@ -1,23 +1,17 @@
 using System;
 using System.Collections.Generic;
+using Zenject;
 
 namespace BingoBlitzClone.Gameplay
 {
-    public class BingoCombinations
+    public class BingoCombinations : IInitializable
     {
         private readonly int _gridSize = 5;
-        private readonly List<int[]> _bingoCombinations;
+        public List<int[]> Combinations;
         
-        public BingoCombinations(int gridSize)
+        public void Initialize()
         {
-            _gridSize = gridSize;
-
-            _bingoCombinations = GenerateCombinations();
-        }
-
-        public List<int[]> GetBingoCombinations()
-        {
-            return _bingoCombinations;
+            Combinations = GenerateCombinations();   
         }
 
         private List<int[]> GenerateCombinations()

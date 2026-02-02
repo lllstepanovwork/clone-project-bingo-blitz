@@ -29,14 +29,16 @@ namespace BingoBlitzClone.UI
         }
         
         private UIManager _uiManager;
+        private SignalBus _signalBus;
 
         [Inject]
-        public void Construct(UIManager uiManager)
+        public void Construct(SignalBus signalBus, UIManager uiManager)
         {
             _uiManager = uiManager;
+            _signalBus = signalBus;
         }
 
-        public void Init()
+        private void Init()
         {
             LayoutNumber = MinLayoutNumber;
             UpdateLayoutText();
@@ -45,6 +47,8 @@ namespace BingoBlitzClone.UI
         public override void OnUIPanelOpened()
         {
             PlayShakeAnimation();
+            
+            Init();
         }
 
         private void PlayShakeAnimation()
@@ -76,6 +80,18 @@ namespace BingoBlitzClone.UI
         public void OnPlayButtonClicked()
         {
             _uiManager.OpenGameplayPanel(LayoutNumber);
+            
+            _signalBus.Fire(new LayoutSelectedSignal(LayoutNumber));
         }
-    }    
+    }
+
+    public class LayoutSelectedSignal
+    {
+        public readonly int LayoutNumber;
+        
+        public LayoutSelectedSignal(int layoutNumber)
+        {
+            LayoutNumber = layoutNumber;
+        }
+    }
 }

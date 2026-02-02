@@ -1,48 +1,44 @@
 using System;
 using System.Collections.Generic;
-using BingoBlitzClone.Game;
 using BingoBlitzClone.Utils;
-using UnityEngine;
+using Zenject;
 
 namespace BingoBlitzClone.Gameplay
 {
-    public class BingoSequence : MonoBehaviour
+    public class BingoSequence: IInitializable, IDisposable
     {
-        [SerializeField] private List<BingoBall> bingoBalls = new List<BingoBall>();
-        [SerializeField] private Transform layout;
-        
-        [SerializeField] private List<int> bingoSequence = new List<int>();
-        private readonly CountdownTimer _countdownTimer = new CountdownTimer(Constants.BINGO_SEQUENCE_FIRST_TIME);
-
-        [SerializeField] private List<Sprite> bingoBallsSprites = new List<Sprite>();
-
-        public static event Action OnSequenceFinished;
-        public static event Action<List<int>> OnNewBingoNumberCreated;
-        
+        private List<int> _bingoSequence = new List<int>();
         private readonly List<int> _activeSequence = new List<int>();
+
+        private CountdownTimer _countdownTimer;
         
-        private void OnEnable()
+        public static event Action OnSequenceFinished;
+        public static event Action<int> OnNewBingoNumberCreated;
+        
+        private GameRules _gameRules;
+        
+        [Inject]
+        public void Construct(GameRules gameRules)
         {
-            _countdownTimer.OnTimerEnd += OnTimerEnd;
+            _gameRules = gameRules;
+        }
+        
+        public void Initialize()
+        {
+            _bingoSequence = ListTools.GetRandomizedList(1,75);
+
+            _countdownTimer = new CountdownTimer(_gameRules.BingoBallAppearTime);
+            _countdownTimer.OnTimerEnd += ShowBingoBall;
         }
 
-        private void OnDisable()
+        public void Dispose()
         {
-            _countdownTimer.OnTimerEnd -= OnTimerEnd;
-        }
-
-        public void Init()
-        {
-            bingoSequence = ListTools.GetRandomizedList(1,75);
-
-            for (int i = 0; i < bingoBalls.Count; i++)
-            {
-                bingoBalls[i].Init();
-            }
+            _countdownTimer.OnTimerEnd -= ShowBingoBall;
         }
 
         public void StartBingoSequence()
         {
+            ShowBingoBall();
             _countdownTimer.Start();
         }
 
@@ -51,28 +47,19 @@ namespace BingoBlitzClone.Gameplay
             _countdownTimer.Stop();
         }
 
-        private void OnTimerEnd()
+        private void ShowBingoBall()
         {
-            if (bingoSequence.Count <= 0)
+            if (_bingoSequence.Count <= 0)
             {
                 OnSequenceFinished?.Invoke();
                 return;
             }
-
-            ListTools.MoveLastToFirst(bingoBalls);
             
-            var number = bingoSequence[0];
-            bingoSequence.RemoveAt(0);
-
-            Sprite bingoBallSprite = GetBingoBallSprite(number);
+            var number = _bingoSequence[0];
+            _bingoSequence.RemoveAt(0);
             
-            bingoBalls[0].Show(number, bingoBallSprite);
-            bingoBalls[0].transform.SetAsFirstSibling();
-            
-            _countdownTimer.Reset(Constants.BINGO_SEQUENCE_REPEAT_TIME);
+            _countdownTimer.Reset();
             _countdownTimer.Start();
-            
-            UpdateBingoBallsVisuals();
             
             if (_activeSequence.Count < 7)
             {
@@ -84,21 +71,12 @@ namespace BingoBlitzClone.Gameplay
                 _activeSequence.Add(number);
             }
             
-            OnNewBingoNumberCreated?.Invoke(_activeSequence);
+            OnNewBingoNumberCreated?.Invoke(number);
         }
 
-        private Sprite GetBingoBallSprite(int number)
+        public bool IsNumberInActiveSequence(int number)
         {
-            var index = (number - 1) / 15;
-            return bingoBallsSprites[index];
-        }
-
-        private void UpdateBingoBallsVisuals()
-        {
-            bingoBalls[1].ScaleDown();
-            bingoBalls[^3].Hide(BingoSequenceTransparencyType.Quarter);
-            bingoBalls[^2].Hide(BingoSequenceTransparencyType.Half);
-            bingoBalls[^1].Hide(BingoSequenceTransparencyType.Clear);
+            return _activeSequence.Contains(number);
         }
     }   
 }

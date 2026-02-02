@@ -29,12 +29,5 @@
         Clear
     }
 
-    public enum ComboCounterState
-    {
-        CounterState,
-        RewardState,
-        CooldownState
-    }
-
     #endregion
 }

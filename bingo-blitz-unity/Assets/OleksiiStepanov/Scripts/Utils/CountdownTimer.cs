@@ -6,26 +6,28 @@ namespace BingoBlitzClone.Utils
 {
     public class CountdownTimer
     {
+        private float TotalTime { get; set; }
         private float TimeRemaining { get; set; }
-        private bool TimerIsRunning { get; set; }
+        private bool IsRunning { get; set; }
     
         public event Action OnTimerEnd; 
     
         public CountdownTimer(float initialTime)
         {
-            TimeRemaining = initialTime;
-            TimerIsRunning = false;
+            TotalTime = initialTime;
+            IsRunning = false;
         }
     
         public void Start()
         {
-            TimerIsRunning = true;
+            TimeRemaining = TotalTime;
+            IsRunning = true;
             RunTimerAsync().Forget();
         }
     
         private async UniTaskVoid RunTimerAsync()
         {
-            while (TimerIsRunning && TimeRemaining > 0)
+            while (IsRunning && TimeRemaining > 0)
             {
                 TimeRemaining -= Time.deltaTime;
                 await UniTask.Yield();
@@ -33,7 +35,7 @@ namespace BingoBlitzClone.Utils
     
             if (TimeRemaining <= 0)
             {
-                TimerIsRunning = false;
+                IsRunning = false;
                 TimeRemaining = 0;
                 OnTimerEnd?.Invoke();
             }
@@ -41,13 +43,12 @@ namespace BingoBlitzClone.Utils
     
         public void Stop()
         {
-            TimerIsRunning = false;
+            IsRunning = false;
         }
     
-        public void Reset(float newTime)
+        public void Reset()
         {
-            TimeRemaining = newTime;
-            TimerIsRunning = false;
+            IsRunning = false;
         }
     }
 }

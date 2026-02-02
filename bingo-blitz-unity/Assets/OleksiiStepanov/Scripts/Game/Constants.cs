@@ -5,8 +5,7 @@ namespace BingoBlitzClone.Game
     public class Constants : MonoBehaviour
     {
         #region Scenes
-
-        public const string LOADER_SCENE_NAME = "Loader";
+        
         public const string MAIN_SCENE_NAME = "Main";
 
         #endregion
@@ -28,13 +27,6 @@ namespace BingoBlitzClone.Game
         public const string GAMEPLAY_MESSAGE_YOU_WON = "YOU WON";
         public const string GAMEPLAY_MESSAGE_ROUND_OVER = "ROUND OVER";
         
-        #endregion
-
-        #region Gameplay
-
-        public const float BINGO_SEQUENCE_FIRST_TIME = 0f;
-        public const float BINGO_SEQUENCE_REPEAT_TIME = 4f;
-
         #endregion
         
         #region Links
