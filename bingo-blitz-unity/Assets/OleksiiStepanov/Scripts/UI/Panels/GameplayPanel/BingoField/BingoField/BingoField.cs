@@ -4,7 +4,6 @@ using BingoBlitzClone.UI;
 using BingoBlitzClone.Utils;
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.UI;
 using Zenject;
 using Random = UnityEngine.Random;
 
@@ -14,51 +13,67 @@ namespace BingoBlitzClone.Gameplay
     {
         [Header("Content")] 
         [SerializeField] private Transform contentTransform;
-        [SerializeField] private GameObject activeState;
-        [SerializeField] private GameObject doneState;
-        [SerializeField] private List<BingoFieldElement> elements = new List<BingoFieldElement>();
+        
+        [Header("States")] 
+        [SerializeField] private BingoFieldState activeState;
+        [SerializeField] private BingoFieldState doneState;
 
         [Header("Columns")]
         [SerializeField] private List<BingoFieldElement> columnB = new List<BingoFieldElement>();
         [SerializeField] private List<BingoFieldElement> columnI = new List<BingoFieldElement>();
-        [SerializeField] private List<BingoFieldElement> columnG = new List<BingoFieldElement>();
         [SerializeField] private List<BingoFieldElement> columnN = new List<BingoFieldElement>();
+        [SerializeField] private List<BingoFieldElement> columnG = new List<BingoFieldElement>();
         [SerializeField] private List<BingoFieldElement> columnO = new List<BingoFieldElement>();
         
-        [Header("Done State Animation")]
-        [SerializeField] private Image doneStateBackground;
-        [SerializeField] private List<RectTransform> bingoLetters = new List<RectTransform>();
+        private readonly List<BingoFieldElement> _elements = new List<BingoFieldElement>();
         
         public static event Action OnMatch;
         public static event Action OnBingoFieldCompleted;
         
+        private BingoLogic _bingoLogic;
         private BingoSequence _bingoSequence;
         private BingoCombinations _combinations;
 
         private int _fieldNumber;
-
+        
         [Inject]
-        public void Construct(BingoSequence bingoSequence, BingoCombinations combinations)
+        public void Construct(BingoLogic bingoLogic, BingoSequence bingoSequence, BingoCombinations combinations)
         {
+            _bingoLogic = bingoLogic;
             _bingoSequence = bingoSequence;
             _combinations = combinations;
+        }
+        
+        private void OnEnable()
+        {
+            ComboCounter.OnReward += OnComboCounterReward;
+        }
+
+        private void OnDisable()
+        {
+            ComboCounter.OnReward -= OnComboCounterReward;
         }
 
         public void Init()
         {
-            activeState.SetActive(true);
-            doneState.SetActive(false);
-
-            for (int i = 0; i < bingoLetters.Count; i++)
-            {
-                bingoLetters[i].localScale = Vector3.zero;
-            }
+            activeState.Enter();
 
             InitColumn(columnB, 1, 15);
             InitColumn(columnI, 16, 30);
-            InitColumn(columnG, 31, 45);
-            InitColumn(columnN, 46, 60);
+            InitColumn(columnN, 31, 45);
+            InitColumn(columnG, 46, 60);
             InitColumn(columnO, 61, 75);
+
+            if (_elements.Count == 0)
+            {
+                AddElementsToList(columnB);
+                AddElementsToList(columnI);
+                AddElementsToList(columnN);
+                AddElementsToList(columnG);
+                AddElementsToList(columnO);   
+            }
+            
+            PlayShakeAnimation();
         }
 
         private void InitColumn(List<BingoFieldElement> columnElements, int minValue, int maxValue)
@@ -72,23 +87,21 @@ namespace BingoBlitzClone.Gameplay
             }
         }
 
-        private void OnEnable()
+        private void AddElementsToList(List<BingoFieldElement> columnElements)
         {
-            ComboCounter.OnReward += OnComboCounterReward;
+            foreach (var element in columnElements)
+            {
+                _elements.Add(element);
+            }
         }
 
-        private void OnDisable()
-        {
-            ComboCounter.OnReward -= OnComboCounterReward;
-        }
-        
         private void OnComboCounterReward()
         {
             List<int> availableElements = new List<int>();
 
-            for (int i = 0; i < elements.Count; i++)
+            for (int i = 0; i < _elements.Count; i++)
             {
-                if (!elements[i].Done)
+                if (!_elements[i].Done)
                 {
                     availableElements.Add(i);
                 }
@@ -100,7 +113,7 @@ namespace BingoBlitzClone.Gameplay
             }
 
             int randomIndex = Random.Range(0, availableElements.Count);
-            elements[availableElements[randomIndex]].SetAsDone();
+            _elements[availableElements[randomIndex]].SetAsDone();
             
             CheckBingoCombinations();
         }
@@ -125,7 +138,7 @@ namespace BingoBlitzClone.Gameplay
                 
                 for (int i = 0; i < bingoCombination.Length; i++)
                 {
-                    if (elements[bingoCombination[i]].Done)
+                    if (_elements[bingoCombination[i]].Done)
                     {
                         counter++;
                     }
@@ -142,43 +155,28 @@ namespace BingoBlitzClone.Gameplay
         {
             for (int i = 0; i < bingoCombination.Length; i++)
             {
-                elements[bingoCombination[i]].SetAsCombinationState();
+                _elements[bingoCombination[i]].SetAsCombinationState();
             }
         }
 
         public void SetAsDone()
         {
-            activeState.SetActive(false);
-            doneState.SetActive(true);
+            activeState.Exit();
+            doneState.Enter(() =>
+            {
+                doneState.Exit(() =>
+                {
+                    Debug.Log("BingoField is done");
+                    OnBingoFieldCompleted?.Invoke();   
+                });
+            });
             
             PlayShakeAnimation();
-            PlayDoneStateAnimation(() =>
-            {
-                OnBingoFieldCompleted?.Invoke();    
-            });
         }
-
-        public void PlayShakeAnimation()
+        
+        private void PlayShakeAnimation()
         {
             contentTransform.DOShakeScale(.2f, .2f);
-        }
-
-        private void PlayDoneStateAnimation(Action onAnimationComplete = null)
-        {
-            Sequence sequence = DOTween.Sequence();
-
-            sequence.Append(doneStateBackground.DOFade(1, 0.1f));
-
-            foreach (var letter in bingoLetters)
-            {
-                sequence.Append(letter.DOScale(1.5f, 0.065f));
-                sequence.Append(letter.DOScale(1f, 0.065f));
-            }
-
-            sequence.AppendCallback(() =>
-            {
-                onAnimationComplete?.Invoke();
-            });
         }
     }
 }

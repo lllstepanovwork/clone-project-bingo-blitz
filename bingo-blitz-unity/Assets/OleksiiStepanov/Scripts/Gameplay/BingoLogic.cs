@@ -36,7 +36,7 @@ namespace BingoBlitzClone.Gameplay
 
             for (int i = 0; i < _layoutNumber; i++) 
             {
-                if (_combinations[i] != null)
+                if (_combinations.Count > 0 && _combinations[i] != null)
                 {
                     _combinations[i].Reset();
                     continue;

@@ -55,14 +55,6 @@ namespace BingoBlitzClone.UI
         {
             _bingoSequence.Stop();
         }
-
-        public void PlayShakeAnimation()
-        {
-            foreach (var bingoField in bingoFields)
-            {
-                bingoField.PlayShakeAnimation();
-            }
-        }
         
         private void BingoFieldOnOnBingoFieldCompleted()
         {

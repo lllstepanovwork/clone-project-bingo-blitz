@@ -67,8 +67,6 @@ namespace BingoBlitzClone.UI
             backButtonTransform.DOShakeScale(0.2f, 0.5f);
             comboCounter.transform.DOShakeScale(0.2f, 0.5f);
             combinationAnimation.transform.DOShakeScale(0.2f, 0.5f);
-            
-            _currentLayout.PlayShakeAnimation();
         }
 
         public void OnBackButtonClicked()
