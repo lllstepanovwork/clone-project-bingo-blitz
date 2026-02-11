@@ -13,27 +13,27 @@ namespace BingoBlitzClone.UI
         [SerializeField] private ComboCounterCooldownState cooldownState;
         
         private GameRules _gameRules;
+        private SignalBus _signalBus;
         
         private int _currentComboCounter = 0;
-        
-        public static event Action OnReward;
         
         private ComboCounterStateType _currentComboCounterState;
 
         [Inject]
-        public void Construct(GameRules gameRules)
+        public void Construct(GameRules gameRules, SignalBus signalBus)
         {
             _gameRules = gameRules;
+            _signalBus = signalBus;
         }
         
         private void OnEnable()
         {
-            BingoField.OnMatch += OnMatch;
+            _signalBus.Subscribe<BingoLogic.NumberMatchSignal>(OnMatch);
         }
         
         private void OnDisable()
         {
-            BingoField.OnMatch -= OnMatch;
+            _signalBus.Unsubscribe<BingoLogic.NumberMatchSignal>(OnMatch);
         }
         
         public void Init()
@@ -99,7 +99,7 @@ namespace BingoBlitzClone.UI
                 ShowState(ComboCounterStateType.CooldownState);    
             });
             
-            OnReward?.Invoke();            
+            _signalBus.Fire(new RewardSignal());         
         }
 
         private enum ComboCounterStateType
@@ -108,7 +108,10 @@ namespace BingoBlitzClone.UI
             RewardState,
             CooldownState
         }
-
     }    
+    
+    public class RewardSignal
+    {
+    }
 }
 

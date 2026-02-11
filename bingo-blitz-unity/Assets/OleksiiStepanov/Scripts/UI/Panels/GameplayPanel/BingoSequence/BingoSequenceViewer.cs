@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using BingoBlitzClone.Game;
 using BingoBlitzClone.Utils;
 using UnityEngine;
+using Zenject;
 
 namespace BingoBlitzClone.Gameplay
 {
@@ -10,6 +11,14 @@ namespace BingoBlitzClone.Gameplay
         [SerializeField] private List<BingoBall> bingoBalls = new List<BingoBall>();
         [SerializeField] private List<Sprite> bingoBallsSprites = new List<Sprite>();
         [SerializeField] private Transform layout;
+
+        private SignalBus _signalBus;
+        
+        [Inject]
+        public void Construct(SignalBus signalBus)
+        {
+            _signalBus = signalBus;
+        }
 
         public void Init()
         {
@@ -21,21 +30,21 @@ namespace BingoBlitzClone.Gameplay
         
         public void OnEnable()
         {
-            BingoSequence.OnNewBingoNumberCreated += OnNewBingoNumberCreated;
+            _signalBus.Subscribe<BingoSequence.NewNumberSignal>(OnNewBingoNumberCreated);
         }
         
         public void OnDisable()
         {
-            BingoSequence.OnNewBingoNumberCreated -= OnNewBingoNumberCreated;
+            _signalBus.Unsubscribe<BingoSequence.NewNumberSignal>(OnNewBingoNumberCreated);
         }
 
-        private void OnNewBingoNumberCreated(int number)
+        private void OnNewBingoNumberCreated(BingoSequence.NewNumberSignal signal)
         {
             ListTools.MoveLastToFirst(bingoBalls);
             
-            Sprite bingoBallSprite = GetBingoBallSprite(number);
+            Sprite bingoBallSprite = GetBingoBallSprite(signal.Number);
             
-            bingoBalls[0].Show(number, bingoBallSprite);
+            bingoBalls[0].Show(signal.Number, bingoBallSprite);
             bingoBalls[0].transform.SetAsFirstSibling();
             
             UpdateBingoBallsVisuals();

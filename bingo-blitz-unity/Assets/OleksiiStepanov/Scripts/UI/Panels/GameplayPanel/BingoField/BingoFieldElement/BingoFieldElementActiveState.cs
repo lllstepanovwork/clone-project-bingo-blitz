@@ -22,5 +22,10 @@ namespace BingoBlitzClone.Gameplay
         {
             gameObject.SetActive(false);
         }
+        
+        public override void ResetState()
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

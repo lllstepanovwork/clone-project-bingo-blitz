@@ -31,7 +31,7 @@ namespace BingoBlitzClone.Editor
             {
                 for (int x = 0; x < GridSize; x++)
                 {
-                    int index = y * GridSize + x;
+                    int index = x * GridSize + y;
 
                     Rect cellRect = new Rect(
                         position.x + x * (CellSize + Padding),

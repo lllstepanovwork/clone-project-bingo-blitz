@@ -1,17 +1,19 @@
 using System;
+using BingoBlitzClone.Gameplay;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using Zenject;
 
 namespace BingoBlitzClone.Utils
 {
-    public class CountdownTimer
+    public class CountdownTimer 
     {
         private float TotalTime { get; set; }
         private float TimeRemaining { get; set; }
         private bool IsRunning { get; set; }
     
-        public event Action OnTimerEnd; 
-    
+        public event Action OnTimerEnd;
+
         public CountdownTimer(float initialTime)
         {
             TotalTime = initialTime;
@@ -22,6 +24,7 @@ namespace BingoBlitzClone.Utils
         {
             TimeRemaining = TotalTime;
             IsRunning = true;
+            
             RunTimerAsync().Forget();
         }
     
@@ -41,6 +44,15 @@ namespace BingoBlitzClone.Utils
             }
         }
     
+        public void Continue()
+        {
+            if (!IsRunning)
+            {
+                IsRunning = true;
+                RunTimerAsync().Forget();
+            }
+        }
+        
         public void Stop()
         {
             IsRunning = false;
@@ -48,7 +60,9 @@ namespace BingoBlitzClone.Utils
     
         public void Reset()
         {
+            Stop();
             IsRunning = false;
+            TimeRemaining = TotalTime;
         }
     }
 }

@@ -12,15 +12,14 @@ namespace BingoBlitzClone.Gameplay
 
         private CountdownTimer _countdownTimer;
         
-        public static event Action OnSequenceFinished;
-        public static event Action<int> OnNewBingoNumberCreated;
-        
         private GameRules _gameRules;
+        private SignalBus _signalBus;
         
         [Inject]
-        public void Construct(GameRules gameRules)
+        public void Construct(SignalBus signalBus, GameRules gameRules)
         {
             _gameRules = gameRules;
+            _signalBus = signalBus;
         }
         
         public void Initialize()
@@ -29,17 +28,31 @@ namespace BingoBlitzClone.Gameplay
 
             _countdownTimer = new CountdownTimer(_gameRules.BingoBallAppearTime);
             _countdownTimer.OnTimerEnd += ShowBingoBall;
+            
+            _signalBus.Subscribe<PauseSignal>(Pause);
         }
 
         public void Dispose()
         {
             _countdownTimer.OnTimerEnd -= ShowBingoBall;
+            _signalBus.Unsubscribe<PauseSignal>(Pause);
+        }
+
+        private void Pause(PauseSignal signal)
+        {
+            if (signal.Paused)
+            {
+                _countdownTimer.Stop();
+            }
+            else
+            {
+                _countdownTimer.Continue();
+            }
         }
 
         public void StartBingoSequence()
         {
             ShowBingoBall();
-            _countdownTimer.Start();
         }
 
         public void Stop()
@@ -51,7 +64,7 @@ namespace BingoBlitzClone.Gameplay
         {
             if (_bingoSequence.Count <= 0)
             {
-                OnSequenceFinished?.Invoke();
+                _signalBus.Fire<CompletedSignal>();
                 return;
             }
             
@@ -71,12 +84,25 @@ namespace BingoBlitzClone.Gameplay
                 _activeSequence.Add(number);
             }
             
-            OnNewBingoNumberCreated?.Invoke(number);
+            _signalBus.Fire(new NewNumberSignal(number));
         }
 
         public bool IsNumberInActiveSequence(int number)
         {
             return _activeSequence.Contains(number);
+        }
+        
+        public class NewNumberSignal
+        {
+            public int Number { get; }
+            public NewNumberSignal(int number)
+            {
+                Number = number;
+            }
+        }
+        
+        public class CompletedSignal
+        {
         }
     }   
 }

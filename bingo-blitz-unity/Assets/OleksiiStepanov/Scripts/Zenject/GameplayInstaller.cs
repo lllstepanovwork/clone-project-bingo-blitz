@@ -1,5 +1,4 @@
 using BingoBlitzClone.UI;
-using UnityEngine;
 using Zenject;
 
 namespace BingoBlitzClone.Gameplay
@@ -16,7 +15,16 @@ namespace BingoBlitzClone.Gameplay
         {
             SignalBusInstaller.Install(Container);
             
-            Container.DeclareSignal<LayoutSelectedSignal>();
+            Container.DeclareSignal<BingoSequence.NewNumberSignal>();
+            Container.DeclareSignal<BingoSequence.CompletedSignal>();
+            
+            Container.DeclareSignal<GameplayPanelLayout.CompletedSignal>();
+            Container.DeclareSignal<PauseSignal>();
+            Container.DeclareSignal<RewardSignal>();
+            
+            Container.DeclareSignal<BingoField.CompletedSignal>();
+            Container.DeclareSignal<BingoLogic.NumberMatchSignal>();
+            Container.DeclareSignal<BingoFieldElement.CompleteFieldButtonClickedSignal>();
         }
 
         private void BindClasses()
@@ -24,6 +32,16 @@ namespace BingoBlitzClone.Gameplay
             Container.BindInterfacesAndSelfTo<BingoLogic>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<BingoSequence>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<BingoCombinations>().AsSingle().NonLazy();
+        }
+    }
+    
+    public class PauseSignal
+    {
+        public bool Paused { get; private set; }
+            
+        public  PauseSignal(bool paused)
+        {
+            Paused = paused;
         }
     }
 }

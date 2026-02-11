@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using BingoBlitzClone.Gameplay;
 using UnityEngine;
@@ -14,24 +13,32 @@ namespace BingoBlitzClone.UI
 
         private int _bingoFieldDoneCounter = 0;
         
-        public static event Action OnWin; 
-        
         private BingoSequence _bingoSequence;
+        private SignalBus _signalBus;
+
+        private bool _active;
         
         [Inject]
-        public void Construct(BingoSequence bingoSequence)
+        public void Construct(SignalBus signalBus, BingoSequence bingoSequence)
         {
+            _signalBus = signalBus;
             _bingoSequence = bingoSequence;
         }
         
         private void OnEnable()
         {
-            BingoField.OnBingoFieldCompleted += BingoFieldOnOnBingoFieldCompleted;
+            _active = true;
+            
+            _signalBus.Subscribe<BingoField.CompletedSignal>(OnBingoFieldCompleted);
+            _signalBus.Subscribe<RewardSignal>(AddRandomNumber);
         }
         
         private void OnDisable()
         {
-            BingoField.OnBingoFieldCompleted -= BingoFieldOnOnBingoFieldCompleted;
+            _active = false;
+            
+            _signalBus.Unsubscribe<BingoField.CompletedSignal>(OnBingoFieldCompleted);
+            _signalBus.Unsubscribe<RewardSignal>(AddRandomNumber);
         }
         
         public void Init()
@@ -40,7 +47,7 @@ namespace BingoBlitzClone.UI
             
             for (var i = 0; i < bingoFields.Count; i++)
             {
-                bingoFields[i].Init();
+                bingoFields[i].Init(i);
             }
             
             bingoSequenceViewer.Init();
@@ -56,14 +63,41 @@ namespace BingoBlitzClone.UI
             _bingoSequence.Stop();
         }
         
-        private void BingoFieldOnOnBingoFieldCompleted()
+        private void OnBingoFieldCompleted()
         {
             _bingoFieldDoneCounter++;
 
             if (_bingoFieldDoneCounter != bingoFields.Count) return;
             
             _bingoSequence.Stop();
-            OnWin?.Invoke();
+            
+            _signalBus.Fire(new CompletedSignal());
+        }
+
+        private void AddRandomNumber()
+        {
+            if (!_active) return;
+            
+            List<BingoField> availableFields = new List<BingoField>();
+
+            foreach (var bingoField in bingoFields)
+            {
+                if (bingoField.HasUndoneElements())
+                    availableFields.Add(bingoField);
+            }
+
+            if (availableFields.Count == 0)
+            {
+                Debug.LogWarning("No bingoFields found");
+                return;
+            }
+
+            int randomIndex = Random.Range(0, availableFields.Count);
+            availableFields[randomIndex].AddRandomNumber();
+        }
+
+        public class CompletedSignal
+        {
         }
     }
 }

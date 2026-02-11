@@ -24,14 +24,34 @@ namespace BingoBlitzClone.Gameplay
         public bool IsMatch(Combination other)
         {
             if (other == null) return false;
-
+            
             for (int i = 0; i < Size * Size; i++)
             {
-                if (cells[i] != other.cells[i])
+                if (cells[i] && cells[i] != other.cells[i])
                     return false;
             }
             
+            DebugPrint("Found Combination");
+            
             return true;
+        }
+        
+        public void DebugPrint(string title = "Combination")
+        {
+            Debug.Log($"--- {title} ---");
+
+            string output = "";
+
+            for (int y = 0; y < Size; y++)
+            {
+                for (int x = 0; x < Size; x++)
+                {
+                    output += Get(x, y) ? "1 " : "0 ";
+                }
+                output += "\n";
+            }
+
+            Debug.Log(output);
         }
         
         public void Reset()

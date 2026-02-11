@@ -20,7 +20,7 @@ namespace BingoBlitzClone.Gameplay
     [Serializable]
     public class GameRules 
     {
-        public float BingoBallAppearTime = 4f;
+        public float BingoBallAppearTime;
         public int MaxCombo;
     }
 }

@@ -80,18 +80,6 @@ namespace BingoBlitzClone.UI
         public void OnPlayButtonClicked()
         {
             _uiManager.OpenGameplayPanel(LayoutNumber);
-            
-            _signalBus.Fire(new LayoutSelectedSignal(LayoutNumber));
-        }
-    }
-
-    public class LayoutSelectedSignal
-    {
-        public readonly int LayoutNumber;
-        
-        public LayoutSelectedSignal(int layoutNumber)
-        {
-            LayoutNumber = layoutNumber;
         }
     }
 }

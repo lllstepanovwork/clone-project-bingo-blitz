@@ -26,6 +26,8 @@ namespace BingoBlitzClone.Game
         public const string GAMEPLAY_MESSAGE_GO = "GO!";
         public const string GAMEPLAY_MESSAGE_YOU_WON = "YOU WON";
         public const string GAMEPLAY_MESSAGE_ROUND_OVER = "ROUND OVER";
+        public const string GAMEPLAY_MESSAGE_PAUSE = "Pause";
+        public const string GAMEPLAY_MESSAGE_CONTINUE = "Continue";
         
         #endregion
         

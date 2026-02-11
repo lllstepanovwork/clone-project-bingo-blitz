@@ -1,4 +1,5 @@
 using UnityEngine;
+using Zenject;
 
 namespace BingoBlitzClone.Gameplay
 {
@@ -10,22 +11,42 @@ namespace BingoBlitzClone.Gameplay
         [SerializeField] private BingoFieldElementState combinationState;
         
         public bool Done { get; private set; }
-        public int Number { get; private set; }
         
-        private bool _initialized = false;
-        private BingoField _bingoField;
+        private int _number;
+        private int _bingoFieldId;
         
-        public void Init(BingoField bingoField, int bingoNumber)
+        private bool _initialized;
+        
+        private SignalBus _signalBus;
+        private BingoLogic _bingoLogic;
+        
+        [Inject]
+        public void Construct(SignalBus signalBus, BingoLogic bingoLogic)
         {
-            _bingoField = bingoField;
+            _signalBus = signalBus;
+            _bingoLogic = bingoLogic;
+        }
+
+        public void Init(int bingoFieldId, int bingoNumber)
+        {
+            ResetStates();
             
             Done = false;
-            Number = bingoNumber;
+            
+            _number = bingoNumber;
+            _bingoFieldId = bingoFieldId;
             
             activeState.Enter();
             activeState.SetNumber(bingoNumber);
             
             _initialized = true;
+        }
+
+        private void ResetStates()
+        {
+            activeState.ResetState();
+            doneState.ResetState();
+            combinationState.ResetState();
         }
 
         public void SetAsDone()
@@ -45,16 +66,24 @@ namespace BingoBlitzClone.Gameplay
         public void OnActiveStateButtonClick()
         {
             if (!_initialized)
-            {
                 return;
-            }
 
-            _bingoField.OnBingoFieldElementButtonClick(this);
+            _bingoLogic.AddNumberToCurrentCombination(_number, SetAsDone);
         }
         
         public void OnCombinationStateButtonClick()
         {
-            _bingoField.SetAsDone();
+            _signalBus.Fire(new CompleteFieldButtonClickedSignal(_bingoFieldId));
+        }
+
+        public class CompleteFieldButtonClickedSignal
+        {
+            public int BingoFieldId { get; private set; }
+
+            public CompleteFieldButtonClickedSignal(int bingoFieldId)
+            {
+                BingoFieldId = bingoFieldId;
+            }
         }
     }
 }

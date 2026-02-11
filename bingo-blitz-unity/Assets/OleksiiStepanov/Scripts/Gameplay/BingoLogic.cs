@@ -1,50 +1,53 @@
 using System;
 using System.Collections.Generic;
-using BingoBlitzClone.UI;
 using Zenject;
 
 namespace BingoBlitzClone.Gameplay
 {
-    public class BingoLogic : IInitializable, IDisposable
+    public class BingoLogic
     {
-        private BingoSequence _bingoSequence;
+        private CombinationInfo _combinationInfo;
         private SignalBus _signalBus;
+        private BingoSequence _bingoSequence;
 
         private int _layoutNumber;
-        private readonly List<Combination> _combinations = new List<Combination>();
+
+        private readonly List<Combination> _currentPlayerCombinations = new List<Combination>();
         
         [Inject]
-        public void Construct(SignalBus signalBus, BingoSequence bingoSequence)
+        public void Construct(SignalBus signalBus, CombinationInfo combinationInfo,  BingoSequence bingoSequence)
         {
+            _combinationInfo = combinationInfo;
             _signalBus = signalBus;
             _bingoSequence = bingoSequence;
         }
-
-        public void Initialize()
+        
+        public void AddNumberToCurrentCombination(int number, Action onComplete)
         {
-            _signalBus.Subscribe<LayoutSelectedSignal>(OnLayoutSelected);
+            bool success = _bingoSequence.IsNumberInActiveSequence(number);
+
+            if (!success) return;
+            
+            onComplete?.Invoke();
+            
+            _signalBus.Fire(new NumberMatchSignal());  
+        }
+
+        public List<Combination> TryFindMatchingCombination(Combination fieldCombination)
+        {   
+            _currentPlayerCombinations.Clear();
+            
+            foreach (var combination in _combinationInfo.Combinations) 
+            {
+                if (combination.IsMatch(fieldCombination))
+                    _currentPlayerCombinations.Add(combination);
+            }
+            
+            return _currentPlayerCombinations;
         }
         
-        public void Dispose()
+        public class NumberMatchSignal
         {
-            _signalBus.Unsubscribe<LayoutSelectedSignal>(OnLayoutSelected);
-        }
-
-        private void OnLayoutSelected(LayoutSelectedSignal signal)
-        {
-            _layoutNumber = signal.LayoutNumber;
-
-            for (int i = 0; i < _layoutNumber; i++) 
-            {
-                if (_combinations.Count > 0 && _combinations[i] != null)
-                {
-                    _combinations[i].Reset();
-                    continue;
-                }
-
-                var combination = new Combination();
-                _combinations.Add(combination);
-            }
         }
     }
 }
