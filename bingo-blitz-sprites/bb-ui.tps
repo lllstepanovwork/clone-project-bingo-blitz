@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>6</int>
         <key>texturePackerVersion</key>
-        <string>7.5.0</string>
+        <string>7.11.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -200,20 +200,8 @@
             <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-i.png</key>
             <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-n.png</key>
             <key type="filename">UI/BingoGameplay/Bingo/bb-bingo-letter-o.png</key>
+            <key type="filename">UI/BingoGameplay/bb-combination-button-holder.png</key>
             <key type="filename">UI/BingoGameplay/bb-number-holder.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-1.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-10.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-11.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-12.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-13.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-2.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-3.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-4.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-5.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-6.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-7.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-8.png</key>
-            <key type="filename">UI/CombinationHintAnimation /bb-combination-9.png</key>
             <key type="filename">UI/General/bb-back-button-icon.png</key>
             <key type="filename">UI/General/bb-bingo-field-icon.png</key>
             <key type="filename">UI/General/bb-minus-button.png</key>
@@ -247,6 +235,23 @@
                 <rect>64,64,0,0</rect>
                 <key>scale9Paddings</key>
                 <rect>32,32,64,64</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">UI/CombinationHint/bb-combination-hint-holder.png</key>
+            <key type="filename">UI/General/bb-close-button-icon.png</key>
+            <key type="filename">UI/General/bb-info-button-icon.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>16,16,32,32</rect>
+                <key>scale9Paddings</key>
+                <rect>16,16,32,32</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -301,22 +306,6 @@
                 <rect>128,128,256,256</rect>
                 <key>scale9Paddings</key>
                 <rect>128,128,256,256</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">UI/General/bb-close-button-icon.png</key>
-            <key type="filename">UI/General/bb-info-button-icon.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>16,16,32,32</rect>
-                <key>scale9Paddings</key>
-                <rect>16,16,32,32</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
