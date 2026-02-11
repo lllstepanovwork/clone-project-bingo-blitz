@@ -31,7 +31,6 @@ namespace BingoBlitzClone.Gameplay
         {
             Container.BindInterfacesAndSelfTo<BingoLogic>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<BingoSequence>().AsSingle().NonLazy();
-            Container.BindInterfacesAndSelfTo<BingoCombinations>().AsSingle().NonLazy();
         }
     }
     
