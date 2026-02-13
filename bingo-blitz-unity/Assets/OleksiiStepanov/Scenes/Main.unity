@@ -207,7 +207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -243,7 +243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -316.85852
+      value: -400.22736
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -257,9 +257,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1322,7 +1330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.95264
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1358,7 +1366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.97632
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1372,9 +1380,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1435,7 +1451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1471,7 +1487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -823.83215
+      value: -1017.19714
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1485,9 +1501,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1541,10 +1565,10 @@ RectTransform:
   - {fileID: 1900334072}
   m_Father: {fileID: 1458518811}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.37, y: 0.22}
-  m_AnchorMax: {x: 0.63, y: 0.78}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &148987405
 PrefabInstance:
@@ -1584,7 +1608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1620,7 +1644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.34534
+      value: -708.7122
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1634,9 +1658,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1722,9 +1754,9 @@ MonoBehaviour:
   m_ChildAlignment: 3
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
+  m_ChildControlHeight: 0
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
@@ -2461,10 +2493,10 @@ RectTransform:
   - {fileID: 1801047063}
   m_Father: {fileID: 461336184}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.56, y: 0.25}
-  m_AnchorMax: {x: 0.8, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 345.5, y: 0}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &239586786
 GameObject:
@@ -2501,7 +2533,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 128, y: 0}
+  m_SizeDelta: {x: 128, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &239586788
 MonoBehaviour:
@@ -2568,7 +2600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.94287
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2604,7 +2636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.971436
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2618,9 +2650,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2937,7 +2977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 84.159996
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2949,7 +2989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 126.23999
+      value: 138
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3005,7 +3045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 84.159996
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -3017,7 +3057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 42.079987
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3301,7 +3341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 84.159996
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -3309,7 +3349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 210.4
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3333,7 +3373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 84.159996
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -3345,7 +3385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 294.55997
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3417,7 +3457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 84.159996
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -3429,7 +3469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 378.71997
+      value: 414
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3666,7 +3706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.94287
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3702,7 +3742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.971436
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3716,9 +3756,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4350,7 +4398,7 @@ MonoBehaviour:
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
+  m_ChildControlHeight: 0
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
@@ -5295,7 +5343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.94287
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5331,7 +5379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.971436
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5345,9 +5393,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7376,7 +7432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7412,7 +7468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -443.60193
+      value: -554.4698
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7426,9 +7482,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8228,7 +8292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.95264
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8264,7 +8328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.97632
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8278,9 +8342,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8627,7 +8699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8663,7 +8735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -190.11511
+      value: -245.9849
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8677,9 +8749,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8917,7 +8997,7 @@ MonoBehaviour:
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
+  m_ChildControlHeight: 0
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
@@ -9377,7 +9457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9413,7 +9493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -63.371704
+      value: -91.74243
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9434,6 +9514,10 @@ PrefabInstance:
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9683,7 +9767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9719,7 +9803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -316.85852
+      value: -400.22736
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9733,9 +9817,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11647,7 +11739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11683,7 +11775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -443.60193
+      value: -554.4698
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11697,9 +11789,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12446,7 +12546,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 128, y: 0}
+  m_SizeDelta: {x: 128, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1310104126
 MonoBehaviour:
@@ -12949,10 +13049,10 @@ RectTransform:
   - {fileID: 280127003}
   m_Father: {fileID: 461336184}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2, y: 0.25}
-  m_AnchorMax: {x: 0.44, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -345.5, y: 0}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1427001749
 GameObject:
@@ -13205,7 +13305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.95264
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13241,7 +13341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.97632
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13255,9 +13355,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13494,7 +13602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.94287
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13530,7 +13638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.971436
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13544,9 +13652,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14055,7 +14171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14091,7 +14207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -697.08875
+      value: -862.9547
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14105,9 +14221,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14624,7 +14748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14660,7 +14784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -823.83215
+      value: -1017.19714
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14674,9 +14798,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15747,7 +15879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.94287
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15783,7 +15915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.971436
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15797,9 +15929,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15860,7 +16000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15896,7 +16036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -190.11511
+      value: -245.9849
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15910,9 +16050,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15973,7 +16121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16009,7 +16157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.34534
+      value: -708.7122
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16023,9 +16171,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16086,7 +16242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16122,7 +16278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -63.371704
+      value: -91.74243
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16143,6 +16299,10 @@ PrefabInstance:
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16203,7 +16363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.95264
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16239,7 +16399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.97632
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16253,9 +16413,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16484,7 +16652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 84.16001
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -16496,7 +16664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 126.24002
+      value: 138
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16552,7 +16720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 84.16001
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -16564,7 +16732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 42.080017
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16848,7 +17016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 84.16001
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -16856,7 +17024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 210.40002
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16880,7 +17048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 84.16001
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -16892,7 +17060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 294.56006
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16964,7 +17132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 84.16001
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -16976,7 +17144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 378.72003
+      value: 414
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -17403,7 +17571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.95264
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17439,7 +17607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.97632
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17453,9 +17621,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17841,7 +18017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 91.83999
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -17853,7 +18029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 137.75998
+      value: 138
       objectReference: {fileID: 0}
     - target: {fileID: 2247318091603671753, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -17909,7 +18085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 91.83999
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -17921,7 +18097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 45.92
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 2746371924666244664, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18201,7 +18377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 91.83999
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -18209,7 +18385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 229.59998
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 6398458807486134371, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18233,7 +18409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 91.83999
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -18245,7 +18421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 321.43994
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 6799675061173658223, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18317,7 +18493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 91.83999
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -18329,7 +18505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 413.27994
+      value: 414
       objectReference: {fileID: 0}
     - target: {fileID: 7954767176112892839, guid: 8056522b7cf3c4e279fda3d0a74794a8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -18570,7 +18746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 126.74341
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18606,7 +18782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -697.08875
+      value: -862.9547
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -18620,9 +18796,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19594,7 +19778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.95264
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19630,7 +19814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.97632
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -19644,9 +19828,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19857,7 +20049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.94287
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19889,11 +20081,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 164.57141
+      value: 164.57143
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.971436
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -19907,9 +20099,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20723,7 +20923,7 @@ MonoBehaviour:
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
+  m_ChildControlHeight: 0
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
@@ -20765,7 +20965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.95264
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20797,11 +20997,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 54.857147
+      value: 54.857178
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.97632
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -20815,9 +21015,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20878,7 +21086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 141.94287
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20914,7 +21122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70.971436
+      value: -86.37579
       objectReference: {fileID: 0}
     - target: {fileID: 4052192397347320242, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -20928,9 +21136,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6264132010335343315, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
       propertyPath: m_Name
       value: BingoBall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414067431660567820, guid: 7d9a2aca851474401bac7e3a43113159, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
