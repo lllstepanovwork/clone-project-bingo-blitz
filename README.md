@@ -25,34 +25,34 @@ You can play it directly in the Unity Editor.
 For the best visual results, set the resolution to landscape (16:9) in the Simulator or Game tab.
 
 The project can also be built and run on:
-• Windows
-• macOS
-• Android
-• iOS
+- Windows
+- macOS
+- Android
+- iOS
 
 ⸻
 
 🚀 Features
 
-• Bingo Blitz–inspired sprites
-• Bingo sequence (1–75 numbers)
-• 1–4 fields (5×5)
-• Combo reward system
-• Pause / Reward cheat buttons
+- Bingo Blitz–inspired sprites
+- Bingo sequence (1–75 numbers)
+- 1–4 fields (5×5)
+- Combo reward system
+- Pause / Reward cheat buttons
 
 ⸻
 
 📖 Technologies
 
 This project was built using:
-• Unity 6 (6000.0.58f2)
-• JetBrains Rider
-• Zenject (dependency injection)
-• Unitasks (async/await workflow)
-• DoTween (animations)
-• TextMeshPro (UI text)
-• TexturePacker (atlas generation)
-• Affinity Suite (image editing & asset creation)
+- Unity 6 (6000.0.58f2)
+- JetBrains Rider
+- Zenject (dependency injection)
+- Unitasks (async/await workflow)
+- DoTween (animations)
+- TextMeshPro (UI text)
+- TexturePacker (atlas generation)
+- Affinity Suite (image editing & asset creation)
 
 🎮 Gameplay Video
 
