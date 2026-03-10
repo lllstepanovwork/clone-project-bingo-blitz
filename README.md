@@ -54,11 +54,8 @@ This project was built using:
 - TexturePacker (atlas generation)
 - Affinity Suite (image editing & asset creation)
 
-🎮 Gameplay Video
+🎮 Links
+ 
+[Check out the gameplay video to see the project in action!]([https://youtu.be/R5dZ7NKvIFI](https://img.youtube.com/vi/ERHKUw_m4mU/0.jpg)](https://youtu.be/ERHKUw_m4mU))
 
-Check out the gameplay video to see the project in action!
-[![Gameplay Video](https://img.youtube.com/vi/ERHKUw_m4mU/0.jpg)](https://youtu.be/ERHKUw_m4mU)
-
-🙏 Thank You
-
-Thank you for checking out my project!
+🙏 Thank you for checking out my project!
